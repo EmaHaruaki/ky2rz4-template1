@@ -14,6 +14,12 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
+    script:[
+      //{ src: 'js/jquery.js', defer: true },
+      //{ src: 'js/navigation.js', defer: true },
+      //{ src: 'js/functions.js', defer: true },
+      //{ src: 'js/scripts.js', defer: true },
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
@@ -21,6 +27,10 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    'assets/style.min.css',
+    'assets/style.css',
+    'assets/font-awesome-4.7.0/css/font-awesome.css',
+    'assets/normalize.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
