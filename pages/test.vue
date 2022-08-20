@@ -2,8 +2,6 @@
 <div>
 	<div data-rsssl=1 class="home page-template-default page page-id-2365 wp-custom-logo hide-blogname hide-blogdescription no-sidebar has-avatars">
 		<div id="page" class="site">
-			<a class="skip-link screen-reader-text" href="#content">コンテンツへスキップ</a>
-
 			<div id="content" class="site-content">
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main">
@@ -101,165 +99,11 @@
 					</main><!-- #main -->
 				</div><!-- #primary -->
 			</div><!-- #content -->
-
-		    <footer id="colophon" class="site-footer">
-				<div id="supplementary" class="footer-widget-area" role="complementary">
-					<div class="footer-widget-content">
-						<div class="footer-widget-wrapper">
-							<div class="footer-widget-1 footer-widget widget-area">
-								<aside id="text-2" class="widget widget_text">
-									<h2 class="widget-title">Footer</h2>
-									<div class="textwidget"><p>フッターウィジェットエリアはフッター1からフッター6までの最大6つのエリアを使用することができます。使用していないエリアは表示されません。それぞれのエリアの幅はカスタマイズ＞フッターから調整することができます。</p></div>
-								</aside>
-							</div><!-- .footer-widget-1 -->
-							<div class="footer-widget-2 footer-widget widget-area">
-								<aside id="nav_menu-2" class="widget widget_nav_menu">
-									<h2 class="widget-title">Menu</h2>
-									<div class="menu-footer-container">
-										<ul id="menu-footer" class="menu">
-											<li id="menu-item-2569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2365 current_page_item menu-item-2569"><a href="https://demo.businesspress.jp/businesspress/" aria-current="page">ホーム</a></li>
-											<li id="menu-item-2570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2570"><a href="https://demo.businesspress.jp/businesspress/page/">ページ</a></li>
-											<li id="menu-item-2572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2572"><a href="https://demo.businesspress.jp/businesspress/typography/">タイポグラフィー</a></li>
-											<li id="menu-item-2571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2571"><a href="https://demo.businesspress.jp/businesspress/contact/">お問い合わせ</a></li>
-											<li id="menu-item-2568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2568"><a href="https://demo.businesspress.jp/businesspress/blog/">ブログ</a></li>
-										</ul>
-									</div>
-								</aside>
-							</div><!-- .footer-widget-2 -->
-							<div class="footer-widget-3 footer-widget widget-area">
-								<aside id="nav_menu-3" class="widget widget_nav_menu">
-									<h2 class="widget-title">Get in touch</h2>
-									<div class="menu-social-container">
-										<ul id="menu-social-2" class="menu">
-											<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2460"><a href="https://twitter.com/wordpress">Twitter</a></li>
-											<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2461"><a href="https://www.facebook.com/WordPress/">Facebook</a></li>
-										</ul>
-									</div>
-								</aside>
-								<aside id="search-3" class="widget widget_search">
-									<form role="search" method="get" class="search-form" action="https://demo.businesspress.jp/businesspress/">
-										<label>
-											<span class="screen-reader-text">検索:</span>
-											<input type="search" class="search-field" placeholder="検索" value="" name="s" />
-										</label>
-										<input type="submit" class="search-submit" value="検索" />
-									</form>
-								</aside>
-							</div><!-- .footer-widget-3 -->
-						</div><!-- .footer-widget-wrapper -->
-					</div><!-- .footer-widget-content -->
-				</div><!-- #supplementary -->
-				<div class="site-bottom">
-					<div class="site-bottom-content">
-						<div class="footer-menu">
-							<nav class="footer-navigation">
-								<div class="menu-footer-container">
-									<ul id="menu-footer-1" class="menu">
-										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2365 current_page_item menu-item-2569"><a href="https://demo.businesspress.jp/businesspress/" aria-current="page">ホーム</a></li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2570"><a href="https://demo.businesspress.jp/businesspress/page/">ページ</a></li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2572"><a href="https://demo.businesspress.jp/businesspress/typography/">タイポグラフィー</a></li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2571"><a href="https://demo.businesspress.jp/businesspress/contact/">お問い合わせ</a></li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2568"><a href="https://demo.businesspress.jp/businesspress/blog/">ブログ</a></li>
-									</ul>
-								</div>
-							</nav><!-- .footer-navigation -->
-							<nav class="footer-social-link social-link-menu">
-								<div class="menu-social-container">
-									<ul id="menu-social-3" class="menu">
-										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2460"><a href="https://twitter.com/wordpress"><span class="screen-reader-text">Twitter</span></a></li>
-										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2461"><a href="https://www.facebook.com/WordPress/"><span class="screen-reader-text">Facebook</span></a></li>
-									</ul>
-								</div>
-							</nav><!-- .footer-social-link -->
-						</div><!-- .footer-menu -->
-						<div class="site-info">
-							<div class="site-copyright">2022 <a href="https://demo.businesspress.jp/businesspress/" rel="home">BusinessPressデモサイト</a>
-							</div><!-- .site-copyright -->
-						</div><!-- .site-info -->
-					</div><!-- .site-bottom-content -->
-				</div><!-- .site-bottom -->
-		    </footer><!-- #colophon -->
-			
-		</div><!-- #page -->
-		<div v-show="buttonActive" :class="{ 'back-to-top': scrollY > 300 }" @click="returnTop"></div>
-	</div>
+			</div><!-- #page -->
+</div>			
 </div>
 </template>
 
 <script>
 </script>
 
-<style>
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-}
-
-	a,
-	.subheader {
-		color: #4693f5;
-	}
-	a:hover {
-		color: #639af6;
-	}
-	a.home-header-button-main {
-		background-color: #4693f5;
-	}
-	a.home-header-button-main:hover {
-		background-color: #639af6;
-	}
-	code, kbd, tt, var,
-	th,
-	pre,
-	.top-bar,
-	.author-profile,
-	.pagination .current,
-	.page-links .page-numbers,
-	.tagcloud a,
-	.widget_calendar tbody td a,
-	.container-wrapper,
-	.site-bottom {
-		background-color: #f4f5f6;
-	}
-
-	.jumbotron {
-		background-image: url("https://demo.businesspress.jp/businesspress/wp-content/themes/businesspress/images/header.jpg");
-	}
-	.home-header-content {
-		text-align: left;
-	}
-
-	@media screen and (min-width: 980px) {
-		.footer-widget-1 {
-			width: 49.98%;
-		}
-		.footer-widget-2 {
-			width: 24.99%;
-		}
-		.footer-widget-3 {
-			width: 24.99%;
-		}
-		.footer-widget-4 {
-			width: 0%;
-		}
-		.footer-widget-5 {
-			width: 0%;
-		}
-		.footer-widget-6 {
-			width: 0%;
-		}
-	}
-
-	@media screen and (max-width: 460px) {
-		.home-header-title br {
-			display: none;
-		}
-	}
-</style>

@@ -1,0 +1,326 @@
+<template>
+<div>
+	<div data-rsssl=1 class="home page-template-default page page-id-2365 wp-custom-logo hide-blogname hide-blogdescription no-sidebar has-avatars">
+		<div id="page" class="site">
+			<a class="skip-link screen-reader-text" href="#content">コンテンツへスキップ</a>
+		    <header id="masthead" class="site-header">
+				<div class="top-bar">
+					<div class="top-bar-content">
+						<ul class="top-bar-main">
+							<li class="top-bar-main-phone">03-1234-XXXX</li>
+							<li class="top-bar-main-contact"><nuxt-link to="/contact/">お問い合わせ</nuxt-link></li>
+							<li class="top-bar-main-access"><nuxt-link to="/contact/">アクセス</nuxt-link></li>
+						</ul><!-- .top-bar-main -->
+						<nav class="header-social-link social-link-menu">
+							<div class="menu-social-container">
+								<ul id="menu-social" class="menu">
+									<li id="menu-item-2460" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2460">
+										<a href="https://twitter.com/wordpress"><span class="screen-reader-text">Twitter</span></a>
+									</li>
+									<li id="menu-item-2461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2461">
+										<a href="https://www.facebook.com/WordPress/"><span class="screen-reader-text">Facebook</span></a>
+									</li>
+								</ul>
+							</div>
+						</nav><!-- .header-social-link -->
+					</div><!-- .top-bar-content -->
+				</div><!-- .top-bar -->
+				
+				<div class="main-header main-header-original" :class="{ 'main-header-clone main-header-clone-show': scrollY > 200, 'drawer-opened':active01 }">
+					<div class="main-header-content">
+						<div class="site-branding">
+							<div class="site-logo">
+								<nuxt-link to="/" rel="home">
+									<img alt="BusinessPressデモサイト" src="https://demo.businesspress.jp/businesspress/wp-content/uploads/sites/3/2019/05/demo.png" width="230" />
+								</nuxt-link>
+							</div>
+							<h1 class="site-title"><nuxt-link to="/" rel="home">BusinessPressデモサイト</nuxt-link></h1>
+							<div class="site-description">美しいビジネスサイトを作ろう。しかも無料で。</div>
+						</div><!-- .site-branding -->
+						<nav class="main-navigation">
+							<div class="menu-demo-container">
+								<ul id="menu-demo" class="menu">
+									<li id="menu-item-2566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-has-children menu-item-2566" :class="{'current-menu-item current_page_item':$route.path === path_home}"><nuxt-link to="/" aria-current="page">ホーム</nuxt-link>
+									    <ul class="sub-menu">
+										    <li id="menu-item-2561" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2561"><nuxt-link to="/">カスタマイズデモ</nuxt-link></li>
+									    </ul>
+									</li>
+									<li id="menu-item-2562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2562" :class="{'current-menu-item current_page_item':$route.path === path_page}"><nuxt-link to="/page">ページ</nuxt-link>
+									    <ul class="sub-menu">
+											<li id="menu-item-2563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><nuxt-link to="/page">ページタイトル非表示のページ</nuxt-link></li>
+										</ul>
+									</li>
+									<li id="menu-item-2565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2565" :class="{'current-menu-item current_page_item':$route.path === path_typography}"><nuxt-link to="/typography">タイポグラフィー</nuxt-link>
+									    <ul class="sub-menu">
+											<li id="menu-item-2574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2574"><nuxt-link to="/typography">Gutenbergデモ</nuxt-link></li>
+											<li id="menu-item-2573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2573"><nuxt-link to="/typography">カスタム要素</nuxt-link></li>
+										</ul>
+									</li>
+									<li id="menu-item-2564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2564" :class="{'current-menu-item current_page_item':$route.path === path_contact}"><nuxt-link to="/contact">お問い合わせ</nuxt-link></li>
+									<li id="menu-item-2567" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2567" :class="{'current-menu-item current_page_item':$route.path === path_blog}"><nuxt-link to="/blog">ブログ</nuxt-link></li>
+								</ul>
+							</div>
+						</nav><!-- .main-navigation -->
+						<button class="drawer-hamburger" @click='active01=!active01'>
+							<span class="screen-reader-text">メニュー</span>
+							<span class="drawer-hamburger-icon"></span>
+						</button>
+					</div><!-- .main-header-content -->
+					<div class="drawer-overlay"></div>
+				    <div class="drawer-navigation">
+					    <div class="drawer-navigation-content">
+						    <nav class="main-navigation">
+							    <div class="menu-demo-container">
+								    <ul id="menu-demo-1" class="menu">
+								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2365 current_page_item menu-item-has-children menu-item-2566"><nuxt-link to="/" aria-current="page">ホーム</nuxt-link>
+								            <ul class="sub-menu">
+							    		        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2561"><nuxt-link to="/">カスタマイズデモ</nuxt-link></li>
+								            </ul>
+							            </li>
+								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2562"><nuxt-link to="/page">ページ</nuxt-link>
+								            <ul class="sub-menu">
+									            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><nuxt-link to="/page">ページタイトル非表示のページ</nuxt-link></li>
+									        </ul>
+								        </li>
+								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2565"><nuxt-link to="/typography">タイポグラフィー</nuxt-link>
+								            <ul class="sub-menu">
+										        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2574"><nuxt-link to="/typography">Gutenbergデモ</nuxt-link></li>
+										        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2573"><nuxt-link to="/typography">カスタム要素</nuxt-link></li>
+									        </ul>
+								        </li>
+								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2564"><nuxt-link to="/contact">お問い合わせ</nuxt-link></li>
+								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2567"><nuxt-link to="/blog">ブログ</nuxt-link></li>
+							        </ul>
+							    </div>
+						    </nav><!-- .main-navigation -->
+						    <nav class="header-social-link social-link-menu">
+							    <div class="menu-social-container">
+								    <ul id="menu-social-1" class="menu">
+									    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2460"><a href="https://twitter.com/wordpress"><span class="screen-reader-text">Twitter</span></a></li>
+									    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2461"><a href="https://www.facebook.com/WordPress/"><span class="screen-reader-text">Facebook</span></a></li>
+								    </ul>
+							    </div>
+						    </nav><!-- .header-social-link -->
+					    </div><!-- .drawer-navigation-content -->
+				    </div><!-- .drawer-navigation -->
+			    </div><!-- .main-header -->
+                
+                <div v-if="$route.path === path_home">
+				    <TheHomeHeader/>
+                </div>
+				<div v-else-if="$route.path === path_contact">
+                    <TheContactHeader/>
+                </div>
+				<div v-else-if="$route.path === path_page">
+                    <ThePageHeader/>
+                </div>
+				<div v-else-if="$route.path === path_typography">
+                    <TheTypographyHeader/>
+                </div>
+				<div v-else-if="$route.path === path_blog">
+                    <TheBlogHeader/>
+                </div>
+
+	        </header>
+		</div><!-- #page -->
+		<div v-show="buttonActive" :class="{ 'back-to-top': scrollY > 300 }" @click="returnTop"></div>
+	</div>
+
+    <Nuxt/>
+
+    <footer id="colophon" class="site-footer">
+		<div id="supplementary" class="footer-widget-area" role="complementary">
+			<div class="footer-widget-content">
+				<div class="footer-widget-wrapper">
+					<div class="footer-widget-1 footer-widget widget-area">
+						<aside id="text-2" class="widget widget_text">
+							<h2 class="widget-title">Footer</h2>
+							<div class="textwidget"><p>フッターウィジェットエリアはフッター1からフッター6までの最大6つのエリアを使用することができます。使用していないエリアは表示されません。それぞれのエリアの幅はカスタマイズ＞フッターから調整することができます。</p></div>
+						</aside>
+					</div><!-- .footer-widget-1 -->
+					<div class="footer-widget-2 footer-widget widget-area">
+						<aside id="nav_menu-2" class="widget widget_nav_menu">
+							<h2 class="widget-title">Menu</h2>
+							<div class="menu-footer-container">
+								<ul id="menu-footer" class="menu">
+									<li id="menu-item-2569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-2569" :class="{'current-menu-item current_page_item':$route.path === path_home}"><nuxt-link to="/" aria-current="page">ホーム</nuxt-link></li>
+									<li id="menu-item-2570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2570" :class="{'current-menu-item current_page_item':$route.path === path_page}"><nuxt-link to="/page">ページ</nuxt-link></li>
+									<li id="menu-item-2572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2572" :class="{'current-menu-item current_page_item':$route.path === path_typography}"><nuxt-link to="/typography">タイポグラフィー</nuxt-link></li>
+									<li id="menu-item-2571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2571" :class="{'current-menu-item current_page_item':$route.path === path_contact}"><nuxt-link to="/contact">お問い合わせ</nuxt-link></li>
+									<li id="menu-item-2568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2568" :class="{'current-menu-item current_page_item':$route.path === path_blog}"><nuxt-link to="/blog">ブログ</nuxt-link></li>
+								</ul>
+							</div>
+						</aside>
+					</div><!-- .footer-widget-2 -->
+					<div class="footer-widget-3 footer-widget widget-area">
+						<aside id="nav_menu-3" class="widget widget_nav_menu">
+							<h2 class="widget-title">Get in touch</h2>
+							<div class="menu-social-container">
+								<ul id="menu-social-2" class="menu">
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2460"><a href="https://twitter.com/wordpress">Twitter</a></li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2461"><a href="https://www.facebook.com/WordPress/">Facebook</a></li>
+								</ul>
+							</div>
+						</aside>
+						<aside id="search-3" class="widget widget_search">
+							<form role="search" method="get" class="search-form" action="https://demo.businesspress.jp/businesspress/">
+								<label>
+									<span class="screen-reader-text">検索:</span>
+									<input type="search" class="search-field" placeholder="検索" value="" name="s" />
+								</label>
+								<input type="submit" class="search-submit" value="検索" />
+							</form>
+						</aside>
+					</div><!-- .footer-widget-3 -->
+				</div><!-- .footer-widget-wrapper -->
+			</div><!-- .footer-widget-content -->
+		</div><!-- #supplementary -->
+		<div class="site-bottom">
+			<div class="site-bottom-content">
+				<div class="footer-menu">
+					<nav class="footer-navigation">
+						<div class="menu-footer-container">
+							<ul id="menu-footer-1" class="menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-2569" :class="{'current-menu-item current_page_item':$route.path === path_home}"><nuxt-link to="/" aria-current="page">ホーム</nuxt-link></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2570" :class="{'current-menu-item current_page_item':$route.path === path_page}"><nuxt-link to="/page">ページ</nuxt-link></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2572" :class="{'current-menu-item current_page_item':$route.path === path_typography}"><nuxt-link to="/typography">タイポグラフィー</nuxt-link></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2571" :class="{'current-menu-item current_page_item':$route.path === path_contact}"><nuxt-link to="/contact">お問い合わせ</nuxt-link></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2568" :class="{'current-menu-item current_page_item':$route.path === path_blog}"><nuxt-link to="/blog">ブログ</nuxt-link></li>
+							</ul>
+						</div>
+					</nav><!-- .footer-navigation -->
+					<nav class="footer-social-link social-link-menu">
+						<div class="menu-social-container">
+							<ul id="menu-social-3" class="menu">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2460"><a href="https://twitter.com/wordpress"><span class="screen-reader-text">Twitter</span></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2461"><a href="https://www.facebook.com/WordPress/"><span class="screen-reader-text">Facebook</span></a></li>
+							</ul>
+						</div>
+					</nav><!-- .footer-social-link -->
+				</div><!-- .footer-menu -->
+				<div class="site-info">
+					<div class="site-copyright">2022 <nuxt-link to="/" rel="home">デモサイト</nuxt-link>
+					</div><!-- .site-copyright -->
+				</div><!-- .site-info -->
+			</div><!-- .site-bottom-content -->
+		</div><!-- .site-bottom -->
+	 </footer><!-- #colophon -->
+	 
+	 <div v-show="buttonActive" :class="{ 'back-to-top': scrollY > 300 }" @click="returnTop"></div>
+
+</div>
+</template>
+
+<script>
+export default {
+	data(){
+		return{
+			// 座標を指定
+			scrollY: 0,
+			buttonActive: false,
+			top: 0,
+			active01: false,
+            path_home: "/",
+            path_contact: "/contact",
+            path_blog: "/blog",
+            path_page: "/page",
+            path_typography: "/typography"
+		}
+	},
+	mounted(){
+		window.addEventListener('scroll', this.handleScroll)
+	},
+	methods:{
+		handleScroll(){
+			this.scrollY = window.scrollY
+			if (300 <= this.scrollY) {
+				this.buttonActive = true
+			} else {
+				this.buttonActive = false
+			}
+		},
+		returnTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			})
+		},
+	}
+}
+</script>
+
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+
+	a,
+	.subheader {
+		color: #4693f5;
+	}
+	a:hover {
+		color: #639af6;
+	}
+	a.home-header-button-main {
+		background-color: #4693f5;
+	}
+	a.home-header-button-main:hover {
+		background-color: #639af6;
+	}
+	code, kbd, tt, var,
+	th,
+	pre,
+	.top-bar,
+	.author-profile,
+	.pagination .current,
+	.page-links .page-numbers,
+	.tagcloud a,
+	.widget_calendar tbody td a,
+	.container-wrapper,
+	.site-bottom {
+		background-color: #f4f5f6;
+	}
+
+	.jumbotron {
+		background-image: url("https://demo.businesspress.jp/businesspress/wp-content/themes/businesspress/images/header.jpg");
+	}
+	.home-header-content {
+		text-align: left;
+	}
+
+	@media screen and (min-width: 980px) {
+		.footer-widget-1 {
+			width: 49.98%;
+		}
+		.footer-widget-2 {
+			width: 24.99%;
+		}
+		.footer-widget-3 {
+			width: 24.99%;
+		}
+		.footer-widget-4 {
+			width: 0%;
+		}
+		.footer-widget-5 {
+			width: 0%;
+		}
+		.footer-widget-6 {
+			width: 0%;
+		}
+	}
+
+	@media screen and (max-width: 460px) {
+		.home-header-title br {
+			display: none;
+		}
+	}
+</style>
