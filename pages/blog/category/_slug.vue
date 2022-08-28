@@ -16,7 +16,7 @@
 						<div class="loop-wrapper">
 				
 							<div class="post-list">
-								<article v-for="n in res_list.list" :key="n.slug" id="post-2279" class="post-2279 post type-post status-publish format-standard has-post-thumbnail hentry category-2 tag-4">
+								<article v-for="n in res_list.list" :key="n.topics_id" id="post-2279" class="post-2279 post type-post status-publish format-standard has-post-thumbnail hentry category-2 tag-4">
 									<div class="post-thumbnail">
 										<nuxt-link :to="`/blog/detail/${n.topics_id}`">
 											<img width="482" height="361" :src="`${n.ext_1.url}?width=482&height=361`" class="attachment-businesspress-post-thumbnail-list size-businesspress-post-thumbnail-list wp-post-image" alt="" />
@@ -55,7 +55,7 @@
 						<aside id="businesspress_recent_posts-2" class="widget widget_businesspress_recent_posts">
 							<h2 class="widget-title">最近の投稿</h2>
 							<ul>
-								<li v-for="n in res_newpost.list" :key="n.slug">
+								<li v-for="n in res_newpost.list" :key="n.topics_id">
 									<nuxt-link :to="`/blog/detail/${n.topics_id}`">
 										<div class="recent-posts-thumbnail">
 											<img width="80" height="60" :src="`${n.ext_1.url}?width=80&height=60`" class="attachment-businesspress-post-thumbnail-small size-businesspress-post-thumbnail-small wp-post-image" alt="" />

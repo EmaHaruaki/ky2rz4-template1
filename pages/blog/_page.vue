@@ -8,7 +8,7 @@
 					<main id="main" class="site-main">
 						<div class="loop-wrapper">
 
-							<div v-for="n in response.list" :key="n.slug" class="post-grid">
+							<div v-for="n in response.list" :key="n.topics_id" class="post-grid">
 								<article id="post-2279" class="post-2279 post type-post status-publish format-standard has-post-thumbnail hentry category-2 tag-4">
 									<header class="entry-header">
 										<div class="post-thumbnail">

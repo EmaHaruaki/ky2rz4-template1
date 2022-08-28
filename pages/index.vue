@@ -20,7 +20,7 @@
 										<h2 style="text-align:center">{{response.details.ext_9}}</h2>
 										<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
 										<div class="wp-block-columns alignwide has-3-columns">
-											<div v-for="n in response.details.ext_10" :key="n.slug" class="wp-block-column">
+											<div v-for="(n, idx) in response.details.ext_10" :key="n.idx" class="wp-block-column">
 												<h3 style="text-align:center">{{n.ext_10}}</h3>
 												<p style="text-align:left">{{n.ext_11}}</p>
 												<div class="wp-block-button aligncenter">
@@ -85,7 +85,7 @@
 								<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
 								<p>BusinessPressはブログを美しく表示することにもこだわっています。ビジネステーマとしてではなく、ブログテーマとして利用することも可能です。</p>
 								<ul class="wp-block-latest-posts has-dates">
-									<li v-for="n in response2.list" :key="n.slug">
+									<li v-for="n in response2.list" :key="n.topics_id">
 									    <nuxt-link :to="`/blog/detail/${n.topics_id}`">{{ n.subject }}</nuxt-link>
 										<time class="wp-block-latest-posts__post-date">{{ n.ymd }}</time>
 									</li>
