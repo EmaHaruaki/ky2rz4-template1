@@ -1,0 +1,154 @@
+
+<template>
+<div>
+	<div data-rsssl=1 class="post-template-default single single-post postid-2248 single-format-standard wp-custom-logo hide-blogname hide-blogdescription has-sidebar has-avatars">
+		<div id="page" class="site">
+			<div id="content" class="site-content">
+				<div id="primary" class="content-area">
+					<main id="main" class="site-main">
+
+						<article id="post-2248" class="post-2248 post type-post status-publish format-standard has-post-thumbnail hentry category-2">	
+							
+							<header class="entry-header">
+								<div class="cat-links"><nuxt-link :to="`/blog/category/${res_detail.details.contents_type}`" rel="category tag">{{res_detail.details.contents_type_nm}}</nuxt-link>
+								</div><!-- .cat-links -->
+								<h1 class="entry-title">{{res_detail.details.subject}}</h1>
+								<div class="entry-meta">
+									<span class="posted-on">
+										<nuxt-link :to="`/blog/detail/${$route.params.slug}`" rel="bookmark">
+											<time class="entry-date published updated">{{res_detail.details.ymd}}</time>
+										</nuxt-link>
+									</span>
+								</div><!-- .entry-meta -->
+								<div class="post-thumbnail"><img width="840" height="560" :src="`${res_detail.details.ext_1.url}?width=840&height=560`" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></div>
+							</header><!-- .entry-header -->
+							
+							<div class="entry-content">
+								<div v-html="res_detail.details.ext_3"></div>
+							</div><!-- .entry-content -->
+							
+						</article><!-- #post-## -->
+
+						<nav class="navigation post-navigation">
+							<h2 class="screen-reader-text">投稿ナビゲーション</h2>
+							<div v-for="i in res_list.pageInfo.totalCnt" :key="i" class="nav-links">
+								<div v-if="res_list.list[i-1].topics_id === res_detail.details.topics_id && i != 1" class="nav-previous">
+									<div class="post-nav-title">前の投稿</div>
+									<nuxt-link :to="`/blog/detail/${res_list.list[i-2].topics_id}`" rel="prev">{{res_list.list[i-2].subject}}</nuxt-link>
+								</div>
+								<div v-if="res_list.list[i-1].topics_id === res_detail.details.topics_id && i != res_list.pageInfo.totalCnt" class="nav-next">
+									<div class="post-nav-title">次の投稿</div>
+									<nuxt-link :to="`/blog/detail/${res_list.list[i].topics_id}`" rel="next">{{res_list.list[i].subject}}</nuxt-link>
+								</div>
+							</div><!-- .nav-links -->
+						</nav><!-- .post-navigation -->
+					
+					</main><!-- #main -->
+				</div><!-- #primary -->
+				
+				<div id="secondary" class="sidebar-area" role="complementary">
+					<div class="normal-sidebar widget-area">
+						<aside id="businesspress_recent_posts-2" class="widget widget_businesspress_recent_posts">
+							<h2 class="widget-title">最近の投稿</h2>
+							<ul>
+								<li v-for="i in 5" :key="i">
+									<nuxt-link :to="`/blog/detail/${res_list.list[i-1].topics_id}`">
+										<div class="recent-posts-thumbnail">
+											<img width="80" height="60" :src="`${res_list.list[i-1].ext_1.url}?width=80&height=60`" class="attachment-businesspress-post-thumbnail-small size-businesspress-post-thumbnail-small wp-post-image" alt="" />
+										</div><!-- .recent-posts-thumbnail -->
+										<div class="recent-posts-text">
+											<span class="post-title">{{res_list.list[i-1].subject}}</span>
+											<span class="post-date">{{res_list.list[i-1].ymd}}</span>
+										</div><!-- .recent-posts-text -->
+									</nuxt-link>
+								</li>
+							</ul>
+						</aside>
+						
+						<aside id="categories-2" class="widget widget_categories">
+							<h2 class="widget-title">カテゴリー</h2>
+							<ul>
+								<li v-for="n in res_category.list" :key="n.topics_category_id" class="cat-item cat-item-2">
+									<nuxt-link :to="`/blog/category/${n.topics_category_id}`" >{{n.category_nm}}</nuxt-link>
+								</li>
+							</ul>
+						</aside>
+
+						<aside id="tag_cloud-2" class="widget widget_tag_cloud">
+							<h2 class="widget-title">タグ</h2>
+							<div class="tagcloud">
+								<nuxt-link v-for="n in res_tag.list" :key="n.tag_id" :to="`/blog/category/${n.tag_id}`" class="tag-cloud-link tag-link-4 tag-link-position-1" >{{n.tag_nm}}</nuxt-link>
+							</div>
+						</aside>
+
+<!--						
+						<aside id="search-2" class="widget widget_search">
+							<form role="search" method="get" class="search-form" action="https://demo.businesspress.jp/businesspress/">
+								<label>
+									<span class="screen-reader-text">検索:</span>
+									<input type="search" class="search-field" placeholder="検索 &hellip;" value="" name="s" />
+								</label>
+								<input type="submit" class="search-submit" value="検索" />
+							</form>
+						</aside>
+-->
+					</div><!-- .normal-sidebar -->
+<!--					
+					<div id="sticky-sidebar" class="sticky-sidebar widget-area">
+						<aside id="businesspress_featured_posts-2" class="widget widget_businesspress_featured_posts">
+							<h2 class="widget-title">注目の投稿</h2>
+							<a href="https://demo.businesspress.jp/businesspress/blog/2019/01/25/design-is-not-just-what-it-looks-like-and-feels-like-design-is-how-it-works/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://demo.businesspress.jp/businesspress/wp-content/uploads/sites/3/2019/01/photo-1420547625303-0894752c1ffa-482x318.jpg')">
+							    <div class="featured-widget-entry-overlay">
+								    <div class="featured-widget-entry-content">
+								    	<h3 class="featured-widget-entry-title">デザインとは単にどう見えるかやどう感じるかではない。どう機能するかだ。</h3>
+									    <div class="featured-widget-entry-date">2019年1月25日</div>
+								    </div>
+							    </div>
+							</a>
+							<a href="https://demo.businesspress.jp/businesspress/blog/2019/01/25/the-life-of-a-designer-is-a-life-of-fight-fight-against-the-ugliness/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://demo.businesspress.jp/businesspress/wp-content/uploads/sites/3/2019/01/photo-1433840688634-c05a545c2594-482x318.jpg')">
+							    <div class="featured-widget-entry-overlay">
+									<div class="featured-widget-entry-content">
+										<h3 class="featured-widget-entry-title">デザイナーの人生は戦いである。醜さとの戦い。</h3>
+										<div class="featured-widget-entry-date">2019年1月25日</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://demo.businesspress.jp/businesspress/blog/2019/01/25/if-you-can-design-one-thing-you-can-design-everything/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://demo.businesspress.jp/businesspress/wp-content/uploads/sites/3/2019/01/photo-1444853323897-09621e4d4f99-482x318.jpg')">
+							    <div class="featured-widget-entry-overlay">
+									<div class="featured-widget-entry-content">
+										<h3 class="featured-widget-entry-title">もしあなたがひとつデザインできるなら、全てをデザインできる。</h3>
+										<div class="featured-widget-entry-date">2019年1月25日</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://demo.businesspress.jp/businesspress/blog/2019/01/25/simple-is-good/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://demo.businesspress.jp/businesspress/wp-content/uploads/sites/3/2019/01/photo-1446817852323-048fe2d5f61a-482x318.jpg')">
+							    <div class="featured-widget-entry-overlay">
+									<div class="featured-widget-entry-content">
+										<h3 class="featured-widget-entry-title">シンプルは良い。</h3>
+										<div class="featured-widget-entry-date">2019年1月25日</div>
+									</div>
+								</div>
+							</a>
+						</aside>
+					</div>
+				-->
+				</div><!-- #secondary -->
+			
+			</div><!-- #content -->
+		</div><!-- #page -->
+	</div>
+</div>
+</template>
+
+<script>
+export default {
+	async asyncData({ $axios, params }) {
+		return { 
+			res_list: await $axios.$get('/rcms-api/3/blog/list',{params:{cnt:100}}),
+			res_category: await $axios.$get('/rcms-api/3/category/list'),
+			res_tag: await $axios.$get('/rcms-api/3/tag/list'),
+			res_detail: await $axios.$get(`/rcms-api/3/content/detail/${params.slug}`),
+		};
+	},
+};
+</script>
