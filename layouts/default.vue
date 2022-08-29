@@ -2,13 +2,12 @@
 <div>
 	<div data-rsssl=1 class="home page-template-default page page-id-2365 wp-custom-logo hide-blogname hide-blogdescription no-sidebar has-avatars">
 		<div id="page" class="site">
-			<a class="skip-link screen-reader-text" href="#content">コンテンツへスキップ</a>
 		    <header id="masthead" class="site-header">
 				<div class="top-bar">
 					<div class="top-bar-content">
 						<ul class="top-bar-main">
 							<li class="top-bar-main-phone">03-1234-XXXX</li>
-							<li class="top-bar-main-contact"><nuxt-link to="/contact/">お問い合わせ</nuxt-link></li>
+							<li class="top-bar-main-contact"><nuxt-link to="/contact/">お問い合わせ{{response_homeheader}}</nuxt-link></li>
 							<li class="top-bar-main-access"><nuxt-link to="/contact/">アクセス</nuxt-link></li>
 						</ul><!-- .top-bar-main -->
 						<nav class="header-social-link social-link-menu">
@@ -31,10 +30,10 @@
 						<div class="site-branding">
 							<div class="site-logo">
 								<nuxt-link to="/" rel="home">
-									<img alt="BusinessPressデモサイト" src="https://demo.businesspress.jp/businesspress/wp-content/uploads/sites/3/2019/05/demo.png" width="230" />
+									<img alt="デモサイト" src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_442660225.jpeg?width=230" width="230" />
 								</nuxt-link>
 							</div>
-							<h1 class="site-title"><nuxt-link to="/" rel="home">BusinessPressデモサイト</nuxt-link></h1>
+							<h1 class="site-title"><nuxt-link to="/" rel="home">デモサイト</nuxt-link></h1>
 							<div class="site-description">美しいビジネスサイトを作ろう。しかも無料で。</div>
 						</div><!-- .site-branding -->
 						<nav class="main-navigation">
@@ -106,7 +105,7 @@
 			    </div><!-- .main-header -->
                 
                 <div v-if="$route.path === path_home">
-				    <TheHomeHeader/>
+				    <TheHomeHeader v-bind="{ }"/>
                 </div>
 				<div v-else-if="$route.path === path_contact">
                     <TheContactHeader/>
@@ -162,15 +161,6 @@
 								</ul>
 							</div>
 						</aside>
-						<aside id="search-3" class="widget widget_search">
-							<form role="search" method="get" class="search-form" action="https://demo.businesspress.jp/businesspress/">
-								<label>
-									<span class="screen-reader-text">検索:</span>
-									<input type="search" class="search-field" placeholder="検索" value="" name="s" />
-								</label>
-								<input type="submit" class="search-submit" value="検索" />
-							</form>
-						</aside>
 					</div><!-- .footer-widget-3 -->
 				</div><!-- .footer-widget-wrapper -->
 			</div><!-- .footer-widget-content -->
@@ -224,7 +214,8 @@ export default {
             path_contact: "/contact",
             path_blog: "/blog",
             path_page: "/page",
-            path_typography: "/typography"
+            path_typography: "/typography",
+			response_homeheader:null
 		}
 	},
 	mounted(){
@@ -245,6 +236,12 @@ export default {
 				behavior: 'smooth'
 			})
 		},
+	},
+	async asyncData({  }) {
+		console.log(`---------test_${Date.now()}----------`);
+		return { 
+			response_homeheader: await $axios.$get('/rcms-api/3/content/detail/6'),
+		};
 	}
 }
 </script>
@@ -291,7 +288,7 @@ img.emoji {
 	}
 
 	.jumbotron {
-		background-image: url("https://demo.businesspress.jp/businesspress/wp-content/themes/businesspress/images/header.jpg");
+		background-image: url("https://ky2rz4.g.kuroco-img.app/files/user/header_img/header.jpg");
 	}
 	.home-header-content {
 		text-align: left;

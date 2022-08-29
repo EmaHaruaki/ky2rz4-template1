@@ -34,7 +34,7 @@
 								<p style="text-align:center" class="subheader">Contact Form</p>
 								<h2 style="text-align:center">お問い合わせフォーム</h2>
 								<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
-								<p>BusinessPressは世界で最も使われているフォームプラグイン「Contact Form 7」に対応しています。プラグインを使うことで柔軟なフォーム作成が可能です。 </p>
+								<p>お問い合わせはヘッドレスCMSで管理します。柔軟なパーソナライズ、自動返信といった機能が簡単に利用可能です。</p>
 								<div role="form" class="wpcf7" id="wpcf7-f2324-p2365-o1" lang="ja" dir="ltr">
 									<div class="screen-reader-response"></div>
 									<form class="wpcf7-form">
@@ -83,7 +83,7 @@
 								<p style="text-align:center" class="subheader">Blog</p>
 								<h2 style="text-align:center">ブログ</h2>
 								<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
-								<p>BusinessPressはブログを美しく表示することにもこだわっています。ビジネステーマとしてではなく、ブログテーマとして利用することも可能です。</p>
+								<p>企業ブログを書くことでSEO対策になります。コンテンツはヘッドレスCMSで管理するため容易に更新可能です。</p>
 								<ul class="wp-block-latest-posts has-dates">
 									<li v-for="n in response2.list" :key="n.topics_id">
 									    <nuxt-link :to="`/blog/detail/${n.topics_id}`">{{ n.subject }}</nuxt-link>
@@ -135,6 +135,7 @@ export default {
 		}
 	},
 	async asyncData({ $axios }) {
+		console.log(`---------test_${Date.now()}----------`);
 		return { 
 			response: await $axios.$get('/rcms-api/3/content/detail/4'),
 			response2: await $axios.$get('/rcms-api/3/blog/list'),

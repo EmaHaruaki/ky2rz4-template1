@@ -87,7 +87,7 @@
 
 <!--						
 						<aside id="search-2" class="widget widget_search">
-							<form role="search" method="get" class="search-form" action="https://demo.businesspress.jp/businesspress/">
+							<form role="search" method="get" class="search-form" action="https://ky2rz4.g.kuroco-front.app/businesspress/">
 								<label>
 									<span class="screen-reader-text">検索:</span>
 									<input type="search" class="search-field" placeholder="検索 &hellip;" value="" name="s" />
@@ -101,7 +101,7 @@
 					<div id="sticky-sidebar" class="sticky-sidebar widget-area">
 						<aside id="businesspress_featured_posts-2" class="widget widget_businesspress_featured_posts">
 							<h2 class="widget-title">注目の投稿</h2>
-							<a href="https://demo.businesspress.jp/businesspress/blog/2019/01/25/design-is-not-just-what-it-looks-like-and-feels-like-design-is-how-it-works/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://demo.businesspress.jp/businesspress/wp-content/uploads/sites/3/2019/01/photo-1420547625303-0894752c1ffa-482x318.jpg')">
+							<a href="https://ky2rz4.g.kuroco-front.app/businesspress/blog/2019/01/25/design-is-not-just-what-it-looks-like-and-feels-like-design-is-how-it-works/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://ky2rz4.g.kuroco-front.app/businesspress/wp-content/uploads/sites/3/2019/01/photo-1420547625303-0894752c1ffa-482x318.jpg')">
 							    <div class="featured-widget-entry-overlay">
 								    <div class="featured-widget-entry-content">
 								    	<h3 class="featured-widget-entry-title">デザインとは単にどう見えるかやどう感じるかではない。どう機能するかだ。</h3>
@@ -109,7 +109,7 @@
 								    </div>
 							    </div>
 							</a>
-							<a href="https://demo.businesspress.jp/businesspress/blog/2019/01/25/the-life-of-a-designer-is-a-life-of-fight-fight-against-the-ugliness/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://demo.businesspress.jp/businesspress/wp-content/uploads/sites/3/2019/01/photo-1433840688634-c05a545c2594-482x318.jpg')">
+							<a href="https://ky2rz4.g.kuroco-front.app/businesspress/blog/2019/01/25/the-life-of-a-designer-is-a-life-of-fight-fight-against-the-ugliness/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://ky2rz4.g.kuroco-front.app/businesspress/wp-content/uploads/sites/3/2019/01/photo-1433840688634-c05a545c2594-482x318.jpg')">
 							    <div class="featured-widget-entry-overlay">
 									<div class="featured-widget-entry-content">
 										<h3 class="featured-widget-entry-title">デザイナーの人生は戦いである。醜さとの戦い。</h3>
@@ -117,7 +117,7 @@
 									</div>
 								</div>
 							</a>
-							<a href="https://demo.businesspress.jp/businesspress/blog/2019/01/25/if-you-can-design-one-thing-you-can-design-everything/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://demo.businesspress.jp/businesspress/wp-content/uploads/sites/3/2019/01/photo-1444853323897-09621e4d4f99-482x318.jpg')">
+							<a href="https://ky2rz4.g.kuroco-front.app/businesspress/blog/2019/01/25/if-you-can-design-one-thing-you-can-design-everything/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://ky2rz4.g.kuroco-front.app/businesspress/wp-content/uploads/sites/3/2019/01/photo-1444853323897-09621e4d4f99-482x318.jpg')">
 							    <div class="featured-widget-entry-overlay">
 									<div class="featured-widget-entry-content">
 										<h3 class="featured-widget-entry-title">もしあなたがひとつデザインできるなら、全てをデザインできる。</h3>
@@ -125,7 +125,7 @@
 									</div>
 								</div>
 							</a>
-							<a href="https://demo.businesspress.jp/businesspress/blog/2019/01/25/simple-is-good/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://demo.businesspress.jp/businesspress/wp-content/uploads/sites/3/2019/01/photo-1446817852323-048fe2d5f61a-482x318.jpg')">
+							<a href="https://ky2rz4.g.kuroco-front.app/businesspress/blog/2019/01/25/simple-is-good/" rel="bookmark" class="featured-widget-entry"		 style="background-image: url('https://ky2rz4.g.kuroco-front.app/businesspress/wp-content/uploads/sites/3/2019/01/photo-1446817852323-048fe2d5f61a-482x318.jpg')">
 							    <div class="featured-widget-entry-overlay">
 									<div class="featured-widget-entry-content">
 										<h3 class="featured-widget-entry-title">シンプルは良い。</h3>

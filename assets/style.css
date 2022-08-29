@@ -1,15 +1,4 @@
-/*
-Theme Name: BusinessPress
-Theme URI: https://businesspress.jp/theme/
-Author: BusinessPress
-Author URI: https://businesspress.jp/
-Description: BusinessPress ia a simple and beautiful business WordPress theme. You can create a website of corporate, group, freelance and so on.
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: businesspress
-Tags: one-column, two-columns, right-sidebar, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
-*/
+/**/
 
 
 /* TABLE OF CONTENTS
@@ -2614,7 +2603,7 @@ a.comment-edit-link:hover {
 	margin-bottom: 6px;
 }
 
-/* BusinessPress Recent Posts */
+/* Recent Posts */
 .widget_businesspress_recent_posts li {
 	margin-bottom: 1.5em;
 }
@@ -2637,7 +2626,7 @@ a.comment-edit-link:hover {
 	text-transform: uppercase;
 }
 
-/* BusinessPress Featured Posts */
+/* Featured Posts */
 .featured-widget-entry {
 	background-color: #333;
 	background-position: center;
@@ -2708,7 +2697,7 @@ a.featured-widget-entry:hover .featured-title {
 	}
 }
 
-/* BusinessPress Profile */
+/* Profile */
 .profilewidget-wrapper {
 	align-items: center;
 	display: flex;
