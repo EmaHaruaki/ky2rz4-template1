@@ -30,7 +30,7 @@
 						<div class="site-branding">
 							<div class="site-logo">
 								<nuxt-link to="/" rel="home">
-									<img alt="デモサイト" src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_442660225.jpeg?width=230" width="230" />
+									<img alt="デモサイト" src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_442660225.png?width=800&height=160" width="250" />
 								</nuxt-link>
 							</div>
 							<h1 class="site-title"><nuxt-link to="/" rel="home">デモサイト</nuxt-link></h1>
