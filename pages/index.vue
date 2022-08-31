@@ -65,27 +65,27 @@
 									<li class="blocks-gallery-item">
 										<figure>
 											<picture>
-												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/img/fe4a5cbf.jpg?with=640&height=354" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
-												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/img/fe4a5cbf.jpg?with=1280&height=708" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
-												<img src="https://ky2rz4.g.kuroco-img.app/files/user/img/fe4a5cbf.jpg" alt="" class="wp-image-2298" width="1280" height="708"/>
+												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg?with=320&height=240" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
+												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg?with=1280&height=960" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
+												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg" alt="" class="wp-image-2298" width="1280" height="960"/>
 											</picture>
 										</figure>
 									</li>
 									<li class="blocks-gallery-item">
 										<figure>
 											<picture>
-												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/img/jeff-sheldon-3219-unsplash.jpg?with=640&height=480" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
-												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/img/jeff-sheldon-3219-unsplash.jpg?with=1280&height=960" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
-												<img src="https://ky2rz4.g.kuroco-img.app/files/user/img/jeff-sheldon-3219-unsplash.jpg" alt="" class="wp-image-2298" width="1280" height="960"/>
+												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg?with=320&height=240" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
+												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg?with=1280&height=960" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
+												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg" alt="" class="wp-image-2298" width="1280" height="960"/>
 											</picture>
 										</figure>
 									</li>
 									<li class="blocks-gallery-item">
 										<figure>
 											<picture>
-												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/img/jo-szczepanska-57782-unsplash.jpg?with=640&height=426" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
-												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/img/jo-szczepanska-57782-unsplash.jpg?with=1280&height=853" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
-												<img src="https://ky2rz4.g.kuroco-img.app/files/user/img/jo-szczepanska-57782-unsplash.jpg" alt="" class="wp-image-2298" width="1280" height="853"/>
+												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg?with=640&height=480" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
+												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg?with=1280&height=960" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
+												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg" alt="" class="wp-image-2298" width="1280" height="960"/>
 											</picture>
 										</figure>
 									</li>

@@ -1,5 +1,5 @@
 <template>
-    <div class="home-header" style="background-image:url('https://ky2rz4.g.kuroco-img.app/files/user/header_img/venveo-609390-unsplash.jpg')">
+    <div class="home-header" style="background-image:url('https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_300415457.jpeg')">
         <div class="home-header-overlay">
             <div class="home-header-content">
               <h2 class="home-header-title">高速・高機能・高セキュリティ<br>それJamStackで実現できます。</h2>

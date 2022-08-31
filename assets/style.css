@@ -1229,7 +1229,7 @@ body {
 /* Home Header */
 .home-header {
 	background-color: #333;
-	background-position: center;
+	background-position: left;
 	background-size: cover;
 }
 .home-header-overlay {
@@ -1289,8 +1289,8 @@ a.home-header-button-sub:hover {
 }
 @media screen and (min-width: 980px) {
 	.home-header-content {
-		padding-bottom: 135px;
-		padding-top: 135px;
+		padding-bottom: 105px;
+		padding-top: 105px;
 	}
 	.home-header-title {
 		font-size: 3rem;

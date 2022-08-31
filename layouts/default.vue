@@ -288,7 +288,7 @@ img.emoji {
 	}
 
 	.jumbotron {
-		background-image: url("https://ky2rz4.g.kuroco-img.app/files/user/header_img/header.jpg");
+		background-image: url("https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_300415457.jpeg");
 	}
 	.home-header-content {
 		text-align: left;
