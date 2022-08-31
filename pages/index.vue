@@ -147,7 +147,6 @@ export default {
 		}
 	},
 	async asyncData({ $axios }) {
-		console.log(`---------test_${Date.now()}----------`);
 		return { 
 			response: await $axios.$get('/rcms-api/3/content/detail/4'),
 			response2: await $axios.$get('/rcms-api/3/blog/list'),

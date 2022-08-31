@@ -44,13 +44,13 @@
 									<li id="menu-item-2566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-2566" :class="{'current-menu-item current_page_item':$route.path === path_home}"><nuxt-link to="/" >ホーム</nuxt-link></li>
 									<li id="menu-item-2562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2562" :class="{'current-menu-item current_page_item':$route.path === path_service}"><nuxt-link to="/service">サービス</nuxt-link>
 									    <ul class="sub-menu">
-											<li id="menu-item-2563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><nuxt-link to="/service#">機能紹介</nuxt-link></li>
+											<li id="menu-item-2563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><nuxt-link to="/service#1">機能紹介</nuxt-link></li>
 										</ul>
 									</li>
 									<li id="menu-item-2565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2565" :class="{'current-menu-item current_page_item':$route.path === path_aboutus}"><nuxt-link to="/about_us">企業情報</nuxt-link>
 									    <ul class="sub-menu">
-											<li id="menu-item-2574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2574"><nuxt-link to="/about_us#">会社概要</nuxt-link></li>
-											<li id="menu-item-2573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2573"><nuxt-link to="/about_us##">代表者メッセージ</nuxt-link></li>
+											<li id="menu-item-2574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2574"><nuxt-link to="/about_us#1">会社概要</nuxt-link></li>
+											<li id="menu-item-2573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2573"><nuxt-link to="/about_us#2">代表者メッセージ</nuxt-link></li>
 										</ul>
 									</li>
 									<li id="menu-item-2564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2564" :class="{'current-menu-item current_page_item':$route.path === path_contact}"><nuxt-link to="/contact">お問い合わせ</nuxt-link></li>
@@ -69,20 +69,28 @@
 						    <nav class="main-navigation">
 							    <div class="menu-demo-container">
 								    <ul id="menu-demo-1" class="menu">
-								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-2566" :class="{'current-menu-item current_page_item':$route.path === path_home}" ><nuxt-link to="/" >ホーム</nuxt-link></li>
-								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2562" :class="{'current-menu-item current_page_item':$route.path === path_service}" ><nuxt-link to="/service">サービス</nuxt-link>
-								            <ul class="sub-menu">
-									            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><nuxt-link to="/service#">機能紹介</nuxt-link></li>
+								        <li @click="closemenu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-2566" :class="{'current-menu-item current_page_item':$route.path === path_home}" ><nuxt-link to="/" >ホーム</nuxt-link></li>
+								        <li>
+											<div @click="closemenu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2562" :class="{'current-menu-item current_page_item':$route.path === path_service}" ><nuxt-link to="/service" >サービス</nuxt-link></div>
+											<button class="dropdown-toggle" :class="{'toggled-on':toggle01 }" :aria-expanded="toggle01 ? 'true':'false'" @click='toggle01=!toggle01'>
+												<span class="screen-reader-text">子メニュー開閉</span>
+											</button>
+								            <ul class="sub-menu" :class="{'toggled-on':toggle01 }">
+									            <li @click="closemenu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><nuxt-link to="/service#1">機能紹介</nuxt-link></li>
 									        </ul>
 								        </li>
-								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2565" :class="{'current-menu-item current_page_item':$route.path === path_aboutus}" ><nuxt-link to="/about_us">企業情報</nuxt-link>
-								            <ul class="sub-menu">
-										        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2574"><nuxt-link to="/about_us#">会社概要</nuxt-link></li>
-										        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2573"><nuxt-link to="/about_us##">代表者メッセージ</nuxt-link></li>
+								        <li>
+											<div @click="closemenu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2565" :class="{'current-menu-item current_page_item':$route.path === path_aboutus}" ><nuxt-link to="/about_us">企業情報</nuxt-link></div>
+											<button class="dropdown-toggle" :class="{'toggled-on':toggle02 }" :aria-expanded="toggle02 ? 'true':'false'" @click='toggle02=!toggle02'>
+												<span class="screen-reader-text">子メニュー開閉</span>
+											</button>
+								            <ul class="sub-menu" :class="{'toggled-on':toggle02 }">
+										        <li @click="closemenu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2574"><nuxt-link to="/about_us#1">会社概要</nuxt-link></li>
+										        <li @click="closemenu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2573"><nuxt-link to="/about_us#2">代表者メッセージ</nuxt-link></li>
 									        </ul>
 								        </li>
-								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2564" :class="{'current-menu-item current_page_item':$route.path === path_contact}" ><nuxt-link to="/contact" >お問い合わせ</nuxt-link></li>
-								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2567" :class="{'current-menu-item current_page_item':$route.path === path_blog}" ><nuxt-link to="/blog" >ブログ</nuxt-link></li>
+								        <li @click="closemenu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2564" :class="{'current-menu-item current_page_item':$route.path === path_contact}" ><nuxt-link to="/contact" >お問い合わせ</nuxt-link></li>
+								        <li @click="closemenu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2567" :class="{'current-menu-item current_page_item':$route.path === path_blog}" ><nuxt-link to="/blog" >ブログ</nuxt-link></li>
 							        </ul>
 							    </div>
 						    </nav><!-- .main-navigation -->
@@ -204,6 +212,8 @@ export default {
 			buttonActive: false,
 			top: 0,
 			active01: false,
+			toggle01: false,
+			toggle02: false,
             path_home: "/",
             path_contact: "/contact",
             path_blog: "/blog",
@@ -230,6 +240,11 @@ export default {
 				behavior: 'smooth'
 			})
 		},
+		closemenu() {
+			this.active01 = false,
+			this.toggle01 = false,
+			this.toggle02 = false
+		}
 	},
 	async asyncData({  }) {
 		console.log(`---------test_${Date.now()}----------`);
