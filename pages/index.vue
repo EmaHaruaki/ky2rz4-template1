@@ -67,7 +67,7 @@
 											<picture>
 												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg?with=320&height=240" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
 												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg?with=1280&height=960" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
-												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg" alt="" class="wp-image-2298" width="1280" height="960"/>
+												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg" alt="" class="wp-image-2298" width="1280" height="960" loading="lazy"/>
 											</picture>
 										</figure>
 									</li>
@@ -76,7 +76,7 @@
 											<picture>
 												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg?with=320&height=240" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
 												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg?with=1280&height=960" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
-												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg" alt="" class="wp-image-2298" width="1280" height="960"/>
+												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg" alt="" class="wp-image-2298" width="1280" height="960" loading="lazy"/>
 											</picture>
 										</figure>
 									</li>
@@ -85,7 +85,7 @@
 											<picture>
 												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg?with=640&height=480" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
 												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg?with=1280&height=960" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
-												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg" alt="" class="wp-image-2298" width="1280" height="960"/>
+												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg" alt="" class="wp-image-2298" width="1280" height="960" loading="lazy"/>
 											</picture>
 										</figure>
 									</li>
