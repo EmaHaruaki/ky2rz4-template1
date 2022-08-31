@@ -3,13 +3,14 @@
 	<div data-rsssl=1 class="home page-template-default page page-id-2365 wp-custom-logo hide-blogname hide-blogdescription no-sidebar has-avatars">
 		<div id="page" class="site">
 		    <header id="masthead" class="site-header">
+				<!--
 				<div class="top-bar">
 					<div class="top-bar-content">
 						<ul class="top-bar-main">
 							<li class="top-bar-main-phone">03-1234-XXXX</li>
 							<li class="top-bar-main-contact"><nuxt-link to="/contact/">お問い合わせ{{response_homeheader}}</nuxt-link></li>
 							<li class="top-bar-main-access"><nuxt-link to="/contact/">アクセス</nuxt-link></li>
-						</ul><!-- .top-bar-main -->
+						</ul>
 						<nav class="header-social-link social-link-menu">
 							<div class="menu-social-container">
 								<ul id="menu-social" class="menu">
@@ -21,9 +22,10 @@
 									</li>
 								</ul>
 							</div>
-						</nav><!-- .header-social-link -->
-					</div><!-- .top-bar-content -->
-				</div><!-- .top-bar -->
+						</nav>
+					</div>
+				</div>
+				-->
 				
 				<div class="main-header main-header-original" :class="{ 'main-header-clone main-header-clone-show': scrollY > 200, 'drawer-opened':active01 }">
 					<div class="main-header-content">
@@ -34,25 +36,21 @@
 								</nuxt-link>
 							</div>
 							<h1 class="site-title"><nuxt-link to="/" rel="home">デモサイト</nuxt-link></h1>
-							<div class="site-description">美しいビジネスサイトを作ろう。しかも無料で。</div>
+							<div class="site-description">高速・高機能・高セキュリティ それJamStackで実現できます。</div>
 						</div><!-- .site-branding -->
 						<nav class="main-navigation">
 							<div class="menu-demo-container">
 								<ul id="menu-demo" class="menu">
-									<li id="menu-item-2566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-has-children menu-item-2566" :class="{'current-menu-item current_page_item':$route.path === path_home}"><nuxt-link to="/" aria-current="page">ホーム</nuxt-link>
+									<li id="menu-item-2566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-2566" :class="{'current-menu-item current_page_item':$route.path === path_home}"><nuxt-link to="/" >ホーム</nuxt-link></li>
+									<li id="menu-item-2562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2562" :class="{'current-menu-item current_page_item':$route.path === path_service}"><nuxt-link to="/service">サービス</nuxt-link>
 									    <ul class="sub-menu">
-										    <li id="menu-item-2561" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2561"><nuxt-link to="/">カスタマイズデモ</nuxt-link></li>
-									    </ul>
-									</li>
-									<li id="menu-item-2562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2562" :class="{'current-menu-item current_page_item':$route.path === path_page}"><nuxt-link to="/page">ページ</nuxt-link>
-									    <ul class="sub-menu">
-											<li id="menu-item-2563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><nuxt-link to="/page">ページタイトル非表示のページ</nuxt-link></li>
+											<li id="menu-item-2563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><nuxt-link to="/service#">機能紹介</nuxt-link></li>
 										</ul>
 									</li>
-									<li id="menu-item-2565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2565" :class="{'current-menu-item current_page_item':$route.path === path_typography}"><nuxt-link to="/typography">タイポグラフィー</nuxt-link>
+									<li id="menu-item-2565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2565" :class="{'current-menu-item current_page_item':$route.path === path_aboutus}"><nuxt-link to="/about_us">企業情報</nuxt-link>
 									    <ul class="sub-menu">
-											<li id="menu-item-2574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2574"><nuxt-link to="/typography">Gutenbergデモ</nuxt-link></li>
-											<li id="menu-item-2573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2573"><nuxt-link to="/typography">カスタム要素</nuxt-link></li>
+											<li id="menu-item-2574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2574"><nuxt-link to="/about_us#">会社概要</nuxt-link></li>
+											<li id="menu-item-2573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2573"><nuxt-link to="/about_us##">代表者メッセージ</nuxt-link></li>
 										</ul>
 									</li>
 									<li id="menu-item-2564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2564" :class="{'current-menu-item current_page_item':$route.path === path_contact}"><nuxt-link to="/contact">お問い合わせ</nuxt-link></li>
@@ -71,24 +69,20 @@
 						    <nav class="main-navigation">
 							    <div class="menu-demo-container">
 								    <ul id="menu-demo-1" class="menu">
-								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2365 current_page_item menu-item-has-children menu-item-2566"><nuxt-link to="/" aria-current="page">ホーム</nuxt-link>
+								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-2566" :class="{'current-menu-item current_page_item':$route.path === path_home}" ><nuxt-link to="/" >ホーム</nuxt-link></li>
+								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2562" :class="{'current-menu-item current_page_item':$route.path === path_service}" ><nuxt-link to="/service">サービス</nuxt-link>
 								            <ul class="sub-menu">
-							    		        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2561"><nuxt-link to="/">カスタマイズデモ</nuxt-link></li>
-								            </ul>
-							            </li>
-								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2562"><nuxt-link to="/page">ページ</nuxt-link>
-								            <ul class="sub-menu">
-									            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><nuxt-link to="/page">ページタイトル非表示のページ</nuxt-link></li>
+									            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><nuxt-link to="/service#">機能紹介</nuxt-link></li>
 									        </ul>
 								        </li>
-								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2565"><nuxt-link to="/typography">タイポグラフィー</nuxt-link>
+								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2565" :class="{'current-menu-item current_page_item':$route.path === path_aboutus}" ><nuxt-link to="/about_us">企業情報</nuxt-link>
 								            <ul class="sub-menu">
-										        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2574"><nuxt-link to="/typography">Gutenbergデモ</nuxt-link></li>
-										        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2573"><nuxt-link to="/typography">カスタム要素</nuxt-link></li>
+										        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2574"><nuxt-link to="/about_us#">会社概要</nuxt-link></li>
+										        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2573"><nuxt-link to="/about_us##">代表者メッセージ</nuxt-link></li>
 									        </ul>
 								        </li>
-								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2564"><nuxt-link to="/contact">お問い合わせ</nuxt-link></li>
-								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2567"><nuxt-link to="/blog">ブログ</nuxt-link></li>
+								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2564" :class="{'current-menu-item current_page_item':$route.path === path_contact}" ><nuxt-link to="/contact" >お問い合わせ</nuxt-link></li>
+								        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2567" :class="{'current-menu-item current_page_item':$route.path === path_blog}" ><nuxt-link to="/blog" >ブログ</nuxt-link></li>
 							        </ul>
 							    </div>
 						    </nav><!-- .main-navigation -->
@@ -110,11 +104,11 @@
 				<div v-else-if="$route.path === path_contact">
                     <TheContactHeader/>
                 </div>
-				<div v-else-if="$route.path === path_page">
-                    <ThePageHeader/>
+				<div v-else-if="$route.path === path_service">
+                    <TheServiceHeader/>
                 </div>
-				<div v-else-if="$route.path === path_typography">
-                    <TheTypographyHeader/>
+				<div v-else-if="$route.path === path_aboutus">
+                    <TheAboutusHeader/>
                 </div>
 				<div v-else-if="$route.path === path_blog">
                     <TheBlogHeader/>
@@ -134,7 +128,7 @@
 					<div class="footer-widget-1 footer-widget widget-area">
 						<aside id="text-2" class="widget widget_text">
 							<h2 class="widget-title">Footer</h2>
-							<div class="textwidget"><p>フッターウィジェットエリアはフッター1からフッター6までの最大6つのエリアを使用することができます。使用していないエリアは表示されません。それぞれのエリアの幅はカスタマイズ＞フッターから調整することができます。</p></div>
+							<div class="textwidget"><p>ここにフッター文面やリンクを設定します。</p></div>
 						</aside>
 					</div><!-- .footer-widget-1 -->
 					<div class="footer-widget-2 footer-widget widget-area">
@@ -142,9 +136,9 @@
 							<h2 class="widget-title">Menu</h2>
 							<div class="menu-footer-container">
 								<ul id="menu-footer" class="menu">
-									<li id="menu-item-2569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-2569" :class="{'current-menu-item current_page_item':$route.path === path_home}"><nuxt-link to="/" aria-current="page">ホーム</nuxt-link></li>
-									<li id="menu-item-2570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2570" :class="{'current-menu-item current_page_item':$route.path === path_page}"><nuxt-link to="/page">ページ</nuxt-link></li>
-									<li id="menu-item-2572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2572" :class="{'current-menu-item current_page_item':$route.path === path_typography}"><nuxt-link to="/typography">タイポグラフィー</nuxt-link></li>
+									<li id="menu-item-2569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-2569" :class="{'current-menu-item current_page_item':$route.path === path_home}"><nuxt-link to="/" >ホーム</nuxt-link></li>
+									<li id="menu-item-2570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2570" :class="{'current-menu-item current_page_item':$route.path === path_service}"><nuxt-link to="/service">サービス</nuxt-link></li>
+									<li id="menu-item-2572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2572" :class="{'current-menu-item current_page_item':$route.path === path_aboutus}"><nuxt-link to="/about_us">企業情報</nuxt-link></li>
 									<li id="menu-item-2571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2571" :class="{'current-menu-item current_page_item':$route.path === path_contact}"><nuxt-link to="/contact">お問い合わせ</nuxt-link></li>
 									<li id="menu-item-2568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2568" :class="{'current-menu-item current_page_item':$route.path === path_blog}"><nuxt-link to="/blog">ブログ</nuxt-link></li>
 								</ul>
@@ -171,9 +165,9 @@
 					<nav class="footer-navigation">
 						<div class="menu-footer-container">
 							<ul id="menu-footer-1" class="menu">
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-2569" :class="{'current-menu-item current_page_item':$route.path === path_home}"><nuxt-link to="/" aria-current="page">ホーム</nuxt-link></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2570" :class="{'current-menu-item current_page_item':$route.path === path_page}"><nuxt-link to="/page">ページ</nuxt-link></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2572" :class="{'current-menu-item current_page_item':$route.path === path_typography}"><nuxt-link to="/typography">タイポグラフィー</nuxt-link></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2365 menu-item-2569" :class="{'current-menu-item current_page_item':$route.path === path_home}"><nuxt-link to="/" >ホーム</nuxt-link></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2570" :class="{'current-menu-item current_page_item':$route.path === path_service}"><nuxt-link to="/service">サービス</nuxt-link></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2572" :class="{'current-menu-item current_page_item':$route.path === path_aboutus}"><nuxt-link to="/about_us">企業情報</nuxt-link></li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2571" :class="{'current-menu-item current_page_item':$route.path === path_contact}"><nuxt-link to="/contact">お問い合わせ</nuxt-link></li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2568" :class="{'current-menu-item current_page_item':$route.path === path_blog}"><nuxt-link to="/blog">ブログ</nuxt-link></li>
 							</ul>
@@ -213,8 +207,8 @@ export default {
             path_home: "/",
             path_contact: "/contact",
             path_blog: "/blog",
-            path_page: "/page",
-            path_typography: "/typography",
+            path_service: "/service",
+            path_aboutus: "/about_us",
 			response_homeheader:null
 		}
 	},
