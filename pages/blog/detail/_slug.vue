@@ -31,14 +31,18 @@
 
 						<nav class="navigation post-navigation">
 							<h2 class="screen-reader-text">投稿ナビゲーション</h2>
-							<div v-for="i in res_list.pageInfo.totalCnt" :key="i" class="nav-links">
-								<div v-if="res_list.list[i-1].topics_id === res_detail.details.topics_id && i != 1" class="nav-previous">
+							<div class="nav-links">
+								<div v-if="res_prev_next.list[1].topics_id == $route.params.slug" class="nav-previous">
 									<div class="post-nav-title">前の投稿</div>
-									<nuxt-link :to="`/blog/detail/${res_list.list[i-2].topics_id}`" rel="prev">{{res_list.list[i-2].subject}}</nuxt-link>
+									<nuxt-link :to="`/blog/detail/${res_prev_next.list[0].topics_id}`" rel="prev">{{res_prev_next.list[0].subject}}</nuxt-link>
 								</div>
-								<div v-if="res_list.list[i-1].topics_id === res_detail.details.topics_id && i != res_list.pageInfo.totalCnt" class="nav-next">
+								<div v-if="res_prev_next.list[0].topics_id == $route.params.slug" class="nav-next">
 									<div class="post-nav-title">次の投稿</div>
-									<nuxt-link :to="`/blog/detail/${res_list.list[i].topics_id}`" rel="next">{{res_list.list[i].subject}}</nuxt-link>
+									<nuxt-link :to="`/blog/detail/${res_prev_next.list[1].topics_id}`" rel="next">{{res_prev_next.list[1].subject}}</nuxt-link>
+								</div>
+								<div v-else-if="res_prev_next.list[1].topics_id == $route.params.slug && res_prev_next.list.length >2" class="nav-next">
+									<div class="post-nav-title">次の投稿</div>
+									<nuxt-link :to="`/blog/detail/${res_prev_next.list[2].topics_id}`" rel="next">{{res_prev_next.list[2].subject}}</nuxt-link>
 								</div>
 							</div><!-- .nav-links -->
 						</nav><!-- .post-navigation -->
@@ -51,14 +55,14 @@
 						<aside id="businesspress_recent_posts-2" class="widget widget_businesspress_recent_posts">
 							<h2 class="widget-title">最近の投稿</h2>
 							<ul>
-								<li v-for="i in 5" :key="i">
-									<nuxt-link :to="`/blog/detail/${res_list.list[i-1].topics_id}`">
+								<li v-for="n in res_list.list" :key="n.topics_id">
+									<nuxt-link :to="`/blog/detail/${n.topics_id}`">
 										<div class="recent-posts-thumbnail">
-											<img width="80" height="60" :src="`${res_list.list[i-1].ext_1.url}?width=80&height=60`" class="attachment-businesspress-post-thumbnail-small size-businesspress-post-thumbnail-small wp-post-image" alt="" />
+											<img width="80" height="60" :src="`${n.ext_1.url}?width=80&height=60`" class="attachment-businesspress-post-thumbnail-small size-businesspress-post-thumbnail-small wp-post-image" alt="" />
 										</div><!-- .recent-posts-thumbnail -->
 										<div class="recent-posts-text">
-											<span class="post-title">{{res_list.list[i-1].subject}}</span>
-											<span class="post-date">{{res_list.list[i-1].ymd}}</span>
+											<span class="post-title">{{n.subject}}</span>
+											<span class="post-date">{{n.ymd}}</span>
 										</div><!-- .recent-posts-text -->
 									</nuxt-link>
 								</li>
@@ -144,7 +148,8 @@
 export default {
 	async asyncData({ $axios, params }) {
 		return { 
-			res_list: await $axios.$get('/rcms-api/3/blog/list',{params:{cnt:100}}),
+			res_list: await $axios.$get('/rcms-api/3/blog/list',{params:{cnt:5}}),
+			res_prev_next: await $axios.$get('/rcms-api/3/blog/list',{params:{cnt:1, central_id:params.slug}}),
 			res_category: await $axios.$get('/rcms-api/3/category/list'),
 			res_tag: await $axios.$get('/rcms-api/3/tag/list'),
 			res_detail: await $axios.$get(`/rcms-api/3/content/detail/${params.slug}`),
