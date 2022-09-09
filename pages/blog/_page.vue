@@ -1,6 +1,14 @@
-
 <template>
 <div>
+	<div class="jumbotron site-header" :style="{ backgroundImage: `url(${response_header.details.ext_4})` }">
+		<div class="jumbotron-overlay">
+			<div class="jumbotron-content">
+				<div class="subheader">{{response_header.details.ext_1}}</div>
+				<h2 class="jumbotron-title">{{response_header.details.ext_2}}</h2>
+			</div><!-- .jumbotron-content -->
+		</div><!-- .jumbotron-overlay -->
+	</div><!-- .jumbotron -->
+
 	<div data-rsssl=1 class="blog wp-custom-logo hide-blogname hide-blogdescription three-column has-avatars">
 		<div id="page" class="site">
 			<div id="content" class="site-content">
@@ -56,6 +64,7 @@ export default {
 	async asyncData({ $axios, params }) {
 		return { 
 			response: await $axios.$get('/rcms-api/3/blog/list',{params:{pageID:params.page}}),
+			response_header: await $axios.$get('/rcms-api/3/content/detail/16'),
 		};
 	},
 };

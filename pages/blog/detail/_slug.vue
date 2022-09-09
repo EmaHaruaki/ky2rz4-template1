@@ -1,6 +1,7 @@
-
 <template>
 <div>
+	<div class="site-header"></div>
+
 	<div data-rsssl=1 class="post-template-default single single-post postid-2248 single-format-standard wp-custom-logo hide-blogname hide-blogdescription has-sidebar has-avatars">
 		<div id="page" class="site">
 			<div id="content" class="site-content">
@@ -81,7 +82,7 @@
 						<aside id="tag_cloud-2" class="widget widget_tag_cloud">
 							<h2 class="widget-title">タグ</h2>
 							<div class="tagcloud">
-								<nuxt-link v-for="n in res_tag.list" :key="n.tag_id" :to="`/blog/category/${n.tag_id}`" class="tag-cloud-link tag-link-4 tag-link-position-1" >{{n.tag_nm}}</nuxt-link>
+								<nuxt-link v-for="n in res_tag.list" :key="n.tag_id" :to="`/blog/tag/${n.tag_id}`" class="tag-cloud-link tag-link-4 tag-link-position-1" >{{n.tag_nm}}</nuxt-link>
 							</div>
 						</aside>
 

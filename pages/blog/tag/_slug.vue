@@ -1,6 +1,7 @@
-
 <template>
 <div>
+	<div class="site-header"></div>
+	
 	<div data-rsssl=1 class="archive tag tag-4 wp-custom-logo hide-blogname hide-blogdescription has-sidebar has-avatars">
 		<div id="page" class="site">
 			<div id="content" class="site-content">

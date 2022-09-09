@@ -2,7 +2,7 @@
 <div>
 	<div data-rsssl=1 class="home page-template-default page page-id-2365 wp-custom-logo hide-blogname hide-blogdescription no-sidebar has-avatars">
 		<div id="page" class="site">
-		    <header id="masthead" class="site-header">
+		    <header id="masthead">
 				<!--
 				<div class="top-bar">
 					<div class="top-bar-content">
@@ -105,23 +105,6 @@
 					    </div><!-- .drawer-navigation-content -->
 				    </div><!-- .drawer-navigation -->
 			    </div><!-- .main-header -->
-                
-                <div v-if="$route.path === path_home">
-				    <TheHomeHeader v-bind="{ }"/>
-                </div>
-				<div v-else-if="$route.path === path_contact">
-                    <TheContactHeader/>
-                </div>
-				<div v-else-if="$route.path === path_service">
-                    <TheServiceHeader/>
-                </div>
-				<div v-else-if="$route.path === path_aboutus">
-                    <TheAboutusHeader/>
-                </div>
-				<div v-else-if="$route.path === path_blog">
-                    <TheBlogHeader/>
-                </div>
-
 	        </header>
 		</div><!-- #page -->
 		<div v-show="buttonActive" :class="{ 'back-to-top': scrollY > 300 }" @click="returnTop"></div>

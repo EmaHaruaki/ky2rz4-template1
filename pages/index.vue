@@ -1,5 +1,17 @@
 <template>
 <div>
+	<div class="home-header site-header" :style="{ backgroundImage: `url(${response.details.ext_1})` }">
+        <div class="home-header-overlay">
+            <div class="home-header-content">
+              <h2 v-html="response.details.ext_2" class="home-header-title"></h2>
+              <div v-html="response.details.ext_3" class="home-header-text"></div>
+              <div class="home-header-button">
+                <nuxt-link v-for="(n, idx) in response.details.ext_4" :key="n.idx" :to="n.url" class="home-header-button">{{n.title}}</nuxt-link>
+              </div>
+			      </div><!-- .home-header-content -->
+        </div><!-- .home-header-overlay -->
+    </div><!-- .home-header -->
+	
 	<div data-rsssl=1 class="home page-template-default page page-id-2365 wp-custom-logo hide-blogname hide-blogdescription no-sidebar has-avatars">
 		<div id="page" class="site">
 

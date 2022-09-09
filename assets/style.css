@@ -3161,3 +3161,14 @@ div.wpcf7 input[type="file"]:disabled {
 div.wpcf7 .wpcf7-submit:disabled {
 	cursor: not-allowed;
 }
+
+a.home-header-button:not(:last-child) {
+	background-color: #4693f5;
+    margin-right: 16px;
+    padding: 12px 25px;
+}
+
+a.home-header-button:last-child {
+    border: solid 2px #fff;
+    padding: 10px 23px;
+}
