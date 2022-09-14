@@ -11,7 +11,6 @@ export default {
       lang: 'ja'
     },
     bodyAttrs: {
-      class: ['hide-blogname hide-blogdescription hide-date hide-author hide-comments-number no-sidebar has-avatars']
     },
     meta: [
       { charset: 'utf-8' },
