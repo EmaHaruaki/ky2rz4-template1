@@ -8,7 +8,10 @@ export default {
   head: {
     title: 'ky2rz4',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
+    },
+    bodyAttrs: {
+      class: ['hide-blogname hide-blogdescription hide-date hide-author hide-comments-number no-sidebar has-avatars']
     },
     meta: [
       { charset: 'utf-8' },
