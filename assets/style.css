@@ -2048,6 +2048,7 @@ a.continue-reading {
 }
 .wp-block-latest-posts a {
 	text-decoration: none;
+	font-size: 20px;
 }
 .wp-block-latest-posts__post-date {
 	margin-top: 0.3em;
@@ -3171,4 +3172,16 @@ a.home-header-button:not(:last-child) {
 a.home-header-button:last-child {
     border: solid 2px #fff;
     padding: 10px 23px;
+}
+
+.news_item_info span{
+	text-align: center;
+    color: #FFF;
+    border-radius: 28px;
+    display: inline-block;
+    min-width: 130px;
+    font-size: 12px;
+    line-height: 22px;
+    padding: 0 10px;
+    background: #19263a;
 }

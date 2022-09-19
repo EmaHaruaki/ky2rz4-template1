@@ -43,6 +43,7 @@
 									</div>
 								</div>
 
+								<!--
 								<p style="text-align:center" class="subheader">Contact Form</p>
 								<h2 style="text-align:center">お問い合わせフォーム</h2>
 								<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -71,14 +72,16 @@
 										</div>
 									</form>
 								</div>
+								-->
 								
+								<!--
 								<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
 								<ul class="wp-block-gallery alignfull columns-3 is-cropped">
 									<li class="blocks-gallery-item">
 										<figure>
 											<picture>
-												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg?with=320&height=240" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
-												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg?with=1280&height=960" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
+												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg?with=320&height=240" />
+												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg?with=1280&height=960" />
 												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_119513944.jpeg" alt="" class="wp-image-2298" width="1280" height="960" loading="lazy"/>
 											</picture>
 										</figure>
@@ -86,8 +89,8 @@
 									<li class="blocks-gallery-item">
 										<figure>
 											<picture>
-												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg?with=320&height=240" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
-												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg?with=1280&height=960" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
+												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg?with=320&height=240" />
+												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg?with=1280&height=960" />
 												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_379681331.jpeg" alt="" class="wp-image-2298" width="1280" height="960" loading="lazy"/>
 											</picture>
 										</figure>
@@ -95,23 +98,26 @@
 									<li class="blocks-gallery-item">
 										<figure>
 											<picture>
-												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg?with=640&height=480" /><!-- ビューポートの横幅が799px以下のデバイスで表示 -->
-												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg?with=1280&height=960" /><!-- ビューポートの横幅が800px以上のデバイスで表示 -->
+												<source media="(max-width: 799px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg?with=640&height=480" />
+												<source media="(min-width: 800px)" srcset="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg?with=1280&height=960" />
 												<img src="https://ky2rz4.g.kuroco-img.app/files/user/header_img/AdobeStock_126091314.jpeg" alt="" class="wp-image-2298" width="1280" height="960" loading="lazy"/>
 											</picture>
 										</figure>
 									</li>
 								</ul>
+								-->
 
 								<div style="height:45px" aria-hidden="true" class="wp-block-spacer"></div>
-								<p style="text-align:center" class="subheader">Blog</p>
-								<h2 style="text-align:center">ブログ</h2>
+								<p style="text-align:center" class="subheader">NEWS</p>
+								<h2 style="text-align:center">最新のお知らせ</h2>
 								<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
-								<p>企業ブログを書くことでSEO対策になります。コンテンツはヘッドレスCMSで管理するため容易に更新可能です。</p>
 								<ul class="wp-block-latest-posts has-dates">
 									<li v-for="n in response2.list" :key="n.topics_id">
-									    <nuxt-link :to="`/blog/detail/${n.topics_id}`">{{ n.subject }}</nuxt-link>
-										<time class="wp-block-latest-posts__post-date">{{ n.ymd }}</time>
+										<div class="news_item_info">
+									    <time class="wp-block-latest-posts__post-date">{{ n.ymd }}</time>
+										<span :style="`background-color: ${n.contents_type_ext_col_01}`">{{ n.contents_type_nm }}</span>
+										</div>
+										<nuxt-link :to="`/news/detail/${n.topics_id}`">{{ n.subject }}</nuxt-link>
 									</li>
 								</ul>
 
@@ -161,7 +167,7 @@ export default {
 	async asyncData({ $axios }) {
 		return { 
 			response: await $axios.$get('/rcms-api/3/content/detail/4'),
-			response2: await $axios.$get('/rcms-api/3/blog/list'),
+			response2: await $axios.$get('/rcms-api/3/news/list'),
 			response3: await $axios.$get('/rcms-api/3/form/detail/3') 
 		};
 	},
