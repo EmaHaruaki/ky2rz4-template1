@@ -2724,11 +2724,11 @@ a.featured-widget-entry:hover .featured-title {
 	color: #fff;
 }
 @media screen and (min-width: 601px) and (max-width: 979px) {
-	.widget_businesspress_featured_posts {
+	.widget_featured_posts {
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.widget_businesspress_featured_posts .widget-title {
+	.widget_featured_posts .widget-title {
 		width: 100%;
 	}
 	.featured-widget-entry {
