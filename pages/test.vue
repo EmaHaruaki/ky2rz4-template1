@@ -1,6 +1,5 @@
 <template>
 <div>
-	<div data-rsssl=1 class="home page-template-default page page-id-2365 wp-custom-logo hide-blogname hide-blogdescription no-sidebar has-avatars">
 		<div id="page" class="site">
 			<div id="content" class="site-content">
 				<div id="primary" class="content-area">
@@ -100,7 +99,6 @@
 				</div><!-- #primary -->
 			</div><!-- #content -->
 			</div><!-- #page -->
-</div>			
 </div>
 </template>
 

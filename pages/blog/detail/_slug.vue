@@ -2,13 +2,13 @@
 <div>
 	<div class="site-header"></div>
 
-	<div data-rsssl=1 class="post-template-default single single-post postid-2248 single-format-standard wp-custom-logo hide-blogname hide-blogdescription has-sidebar has-avatars">
+	<div data-rsssl=1 class="single hide-blogname hide-blogdescription has-sidebar has-avatars">
 		<div id="page" class="site">
 			<div id="content" class="site-content">
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main">
 
-						<article id="post-2248" class="post-2248 post type-post status-publish format-standard has-post-thumbnail hentry category-2">	
+						<article class="post hentry">	
 							
 							<header class="entry-header">
 								<div class="cat-links"><nuxt-link :to="`/blog/category/${res_detail.details.contents_type}`" rel="category tag">{{res_detail.details.contents_type_nm}}</nuxt-link>
@@ -21,7 +21,7 @@
 										</nuxt-link>
 									</span>
 								</div><!-- .entry-meta -->
-								<div class="post-thumbnail"><img width="840" height="560" :src="`${res_detail.details.ext_1.url}?width=840&height=560`" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></div>
+								<div class="post-thumbnail"><img width="840" height="560" :src="`${res_detail.details.ext_1.url}?width=840&height=560`" class="attachment-post-thumbnail size-post-thumbnail" alt="" /></div>
 							</header><!-- .entry-header -->
 							
 							<div class="entry-content">
@@ -53,13 +53,13 @@
 				
 				<div id="secondary" class="sidebar-area" role="complementary">
 					<div class="normal-sidebar widget-area">
-						<aside id="businesspress_recent_posts-2" class="widget widget_businesspress_recent_posts">
+						<aside class="widget widget_recent_posts">
 							<h2 class="widget-title">最近の投稿</h2>
 							<ul>
 								<li v-for="n in res_list.list" :key="n.topics_id">
 									<nuxt-link :to="`/blog/detail/${n.topics_id}`">
 										<div class="recent-posts-thumbnail">
-											<img width="80" height="60" :src="`${n.ext_1.url}?width=80&height=60`" class="attachment-businesspress-post-thumbnail-small size-businesspress-post-thumbnail-small wp-post-image" alt="" />
+											<img width="80" height="60" :src="`${n.ext_1.url}?width=80&height=60`" alt="" />
 										</div><!-- .recent-posts-thumbnail -->
 										<div class="recent-posts-text">
 											<span class="post-title">{{n.subject}}</span>
@@ -70,7 +70,7 @@
 							</ul>
 						</aside>
 						
-						<aside id="categories-2" class="widget widget_categories">
+						<aside class="widget widget_categories">
 							<h2 class="widget-title">カテゴリー</h2>
 							<ul>
 								<li v-for="n in res_category.list" :key="n.topics_category_id" class="cat-item cat-item-2">

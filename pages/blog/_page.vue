@@ -9,7 +9,7 @@
 		</div><!-- .jumbotron-overlay -->
 	</div><!-- .jumbotron -->
 
-	<div data-rsssl=1 class="blog wp-custom-logo hide-blogname hide-blogdescription three-column has-avatars">
+	<div data-rsssl=1 class="blog hide-blogname hide-blogdescription three-column has-avatars">
 		<div id="page" class="site">
 			<div id="content" class="site-content">
 				<div id="primary" class="content-area">
@@ -17,11 +17,11 @@
 						<div class="loop-wrapper">
 
 							<div v-for="n in response.list" :key="n.topics_id" class="post-grid">
-								<article id="post-2279" class="post-2279 post type-post status-publish format-standard has-post-thumbnail hentry category-2 tag-4">
+								<article class="post hentry">
 									<header class="entry-header">
 										<div class="post-thumbnail">
 											<nuxt-link :to="`/blog/detail/${n.topics_id}`">
-												<img width="482" height="318" :src="`${n.ext_1.url}?width=482&height=318`" class="attachment-businesspress-post-thumbnail-medium size-businesspress-post-thumbnail-medium wp-post-image" alt=""  />
+												<img width="482" height="318" :src="`${n.ext_1.url}?width=482&height=318`" alt=""  />
 											</nuxt-link>
 										</div><!-- .post-thumbnail -->
 										<div class="cat-links">

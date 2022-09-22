@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div data-rsssl=1
-			class="archive category category-2 wp-custom-logo hide-blogname hide-blogdescription has-sidebar has-avatars">
+			class="archive category hide-blogname hide-blogdescription has-sidebar has-avatars">
 			<div id="page" class="site">
 				<header id="masthead">
 					<!--
@@ -47,40 +47,40 @@
 							<nav class="main-navigation">
 								<div class="menu-demo-container">
 									<ul id="menu-demo" class="menu">
-										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item"
+										<li class="menu-item page_item"
 											:class="{'current-menu-item current_page_item':$route.path === path_home}">
 											<nuxt-link to="/">ホーム</nuxt-link>
 										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"
+										<li class="menu-item menu-item-has-children"
 											:class="{'current-menu-item current_page_item':$route.path === path_service}">
 											<nuxt-link to="/service">サービス</nuxt-link>
 											<ul class="sub-menu">
-												<li class="menu-item menu-item-type-post_type menu-item-object-page">
+												<li class="menu-item  ">
 													<nuxt-link to="/service#1">機能紹介</nuxt-link>
 												</li>
 											</ul>
 										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"
+										<li class="menu-item menu-item-has-children"
 											:class="{'current-menu-item current_page_item':$route.path === path_aboutus}">
 											<nuxt-link to="/about_us">企業情報</nuxt-link>
 											<ul class="sub-menu">
-												<li class="menu-item menu-item-type-post_type menu-item-object-page">
+												<li class="menu-item  ">
 													<nuxt-link to="/about_us#1">会社概要</nuxt-link>
 												</li>
-												<li class="menu-item menu-item-type-post_type menu-item-object-page">
+												<li class="menu-item  ">
 													<nuxt-link to="/about_us#2">代表者メッセージ</nuxt-link>
 												</li>
 											</ul>
 										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page"
+										<li class="menu-item"
 											:class="{'current-menu-item current_page_item':$route.path === path_news}">
 											<nuxt-link to="/news">お知らせ</nuxt-link>
 										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page"
+										<li class="menu-item"
 											:class="{'current-menu-item current_page_item':$route.path === path_contact}">
 											<nuxt-link to="/contact">お問い合わせ</nuxt-link>
 										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page"
+										<li class="menu-item"
 											:class="{'current-menu-item current_page_item':$route.path === path_blog}">
 											<nuxt-link to="/blog">ブログ</nuxt-link>
 										</li>
@@ -99,13 +99,13 @@
 									<div class="menu-demo-container">
 										<ul id="menu-demo-1" class="menu">
 											<li @click="closemenu"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item"
+												class="menu-item page_item"
 												:class="{'current-menu-item current_page_item':$route.path === path_home}">
 												<nuxt-link to="/">ホーム</nuxt-link>
 											</li>
 											<li>
 												<div @click="closemenu"
-													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"
+													class="menu-item menu-item-has-children"
 													:class="{'current-menu-item current_page_item':$route.path === path_service}">
 													<nuxt-link to="/service">サービス</nuxt-link>
 												</div>
@@ -116,14 +116,14 @@
 												</button>
 												<ul class="sub-menu" :class="{'toggled-on':toggle01 }">
 													<li @click="closemenu"
-														class="menu-item menu-item-type-post_type menu-item-object-page">
+														class="menu-item">
 														<nuxt-link to="/service#1">機能紹介</nuxt-link>
 													</li>
 												</ul>
 											</li>
 											<li>
 												<div @click="closemenu"
-													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"
+													class="menu-item menu-item-has-children"
 													:class="{'current-menu-item current_page_item':$route.path === path_aboutus}">
 													<nuxt-link to="/about_us">企業情報</nuxt-link>
 												</div>
@@ -134,27 +134,27 @@
 												</button>
 												<ul class="sub-menu" :class="{'toggled-on':toggle02 }">
 													<li @click="closemenu"
-														class="menu-item menu-item-type-post_type menu-item-object-page">
+														class="menu-item">
 														<nuxt-link to="/about_us#1">会社概要</nuxt-link>
 													</li>
 													<li @click="closemenu"
-														class="menu-item menu-item-type-post_type menu-item-object-page">
+														class="menu-item">
 														<nuxt-link to="/about_us#2">代表者メッセージ</nuxt-link>
 													</li>
 												</ul>
 											</li>
 											<li @click="closemenu"
-												class="menu-item menu-item-type-post_type menu-item-object-page"
+												class="menu-item"
 												:class="{'current-menu-item current_page_item':$route.path === path_news}">
 												<nuxt-link to="/news">お知らせ</nuxt-link>
 											</li>
 											<li @click="closemenu"
-												class="menu-item menu-item-type-post_type menu-item-object-page"
+												class="menu-item"
 												:class="{'current-menu-item current_page_item':$route.path === path_contact}">
 												<nuxt-link to="/contact">お問い合わせ</nuxt-link>
 											</li>
 											<li @click="closemenu"
-												class="menu-item menu-item-type-post_type menu-item-object-page"
+												class="menu-item"
 												:class="{'current-menu-item current_page_item':$route.path === path_blog}">
 												<nuxt-link to="/blog">ブログ</nuxt-link>
 											</li>
@@ -201,27 +201,27 @@
 								<h2 class="widget-title">Menu</h2>
 								<div class="menu-footer-container">
 									<ul id="menu-footer" class="menu">
-										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item"
+										<li class="menu-item page_item"
 											:class="{'current-menu-item current_page_item':$route.path === path_home}">
 											<nuxt-link to="/">ホーム</nuxt-link>
 										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page"
+										<li class="menu-item"
 											:class="{'current-menu-item current_page_item':$route.path === path_service}">
 											<nuxt-link to="/service">サービス</nuxt-link>
 										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page"
+										<li class="menu-item"
 											:class="{'current-menu-item current_page_item':$route.path === path_aboutus}">
 											<nuxt-link to="/about_us">企業情報</nuxt-link>
 										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page"
+										<li class="menu-item"
 											:class="{'current-menu-item current_page_item':$route.path === path_news}">
 											<nuxt-link to="/news">お知らせ</nuxt-link>
 										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page"
+										<li class="menu-item"
 											:class="{'current-menu-item current_page_item':$route.path === path_contact}">
 											<nuxt-link to="/contact">お問い合わせ</nuxt-link>
 										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page"
+										<li class="menu-item"
 											:class="{'current-menu-item current_page_item':$route.path === path_blog}">
 											<nuxt-link to="/blog">ブログ</nuxt-link>
 										</li>
@@ -253,27 +253,27 @@
 						<nav class="footer-navigation">
 							<div class="menu-footer-container">
 								<ul id="menu-footer-1" class="menu">
-									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item"
+									<li class="menu-item page_item"
 										:class="{'current-menu-item current_page_item':$route.path === path_home}">
 										<nuxt-link to="/">ホーム</nuxt-link>
 									</li>
-									<li class="menu-item menu-item-type-post_type menu-item-object-page"
+									<li class="menu-item"
 										:class="{'current-menu-item current_page_item':$route.path === path_service}">
 										<nuxt-link to="/service">サービス</nuxt-link>
 									</li>
-									<li class="menu-item menu-item-type-post_type menu-item-object-page"
+									<li class="menu-item"
 										:class="{'current-menu-item current_page_item':$route.path === path_aboutus}">
 										<nuxt-link to="/about_us">企業情報</nuxt-link>
 									</li>
-									<li class="menu-item menu-item-type-post_type menu-item-object-page"
+									<li class="menu-item"
 										:class="{'current-menu-item current_page_item':$route.path === path_news}">
 										<nuxt-link to="/news">お知らせ</nuxt-link>
 									</li>
-									<li class="menu-item menu-item-type-post_type menu-item-object-page"
+									<li class="menu-item"
 										:class="{'current-menu-item current_page_item':$route.path === path_contact}">
 										<nuxt-link to="/contact">お問い合わせ</nuxt-link>
 									</li>
-									<li class="menu-item menu-item-type-post_type menu-item-object-page"
+									<li class="menu-item"
 										:class="{'current-menu-item current_page_item':$route.path === path_blog}">
 										<nuxt-link to="/blog">ブログ</nuxt-link>
 									</li>

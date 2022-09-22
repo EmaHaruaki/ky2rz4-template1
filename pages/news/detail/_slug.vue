@@ -9,12 +9,12 @@
 			</div><!-- .jumbotron-overlay -->
 		</div><!-- .jumbotron -->
 
-	<div data-rsssl=1 class="page-template-default page page-id-1806 page-parent wp-custom-logo hide-blogname hide-blogdescription no-sidebar has-avatars">
+	<div data-rsssl=1 class="page hide-blogname hide-blogdescription no-sidebar has-avatars">
 		<div id="page" class="site">
 			<div id="content" class="site-content">
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main">
-						<article id="post-1806" class="post-1806 page type-page status-publish has-post-thumbnail hentry">
+						<article class="page hentry">
 							
 							<div class="entry-content">
 

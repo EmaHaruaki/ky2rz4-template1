@@ -12,13 +12,13 @@
         </div><!-- .home-header-overlay -->
     </div><!-- .home-header -->
 	
-	<div data-rsssl=1 class="home page-template-default page page-id-2365 wp-custom-logo hide-blogname hide-blogdescription no-sidebar has-avatars">
+	<div data-rsssl=1 class="home page hide-blogname hide-blogdescription no-sidebar has-avatars">
 		<div id="page" class="site">
 
 			<div id="content" class="site-content">
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main">
-						<article id="post-2365" class="post-2365 page type-page status-publish hentry">
+						<article class="page hentry">
 
 							<div class="entry-content">
 								<p style="text-align:center" class="subheader">{{response.details.ext_5}}</p>

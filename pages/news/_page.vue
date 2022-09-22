@@ -10,14 +10,12 @@
 		</div><!-- .jumbotron -->
 
 		<div data-rsssl=1
-			class="page-template page-template-nosidebar page-template-nosidebar-php page page-id-1720 wp-custom-logo hide-blogname hide-blogdescription no-sidebar has-avatars">
+			class="page-template page-template-nosidebar page-template-nosidebar-php page hide-blogname hide-blogdescription no-sidebar has-avatars">
 			<div id="page" class="site">
 				<div id="content" class="site-content">
 					<div id="primary" class="content-area">
 						<main id="main" class="site-main">
-							<article id="post-1720"
-								class="post-1720 page type-page status-publish has-post-thumbnail hentry">
-
+							<article class="page hentry">
 
 								<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
 								<ul class="wp-block-latest-posts has-dates">
