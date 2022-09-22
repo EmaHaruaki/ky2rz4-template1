@@ -57,7 +57,7 @@ body {
 	word-wrap: break-word;
 }
 body:lang(ja) {
-	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 1.8;
@@ -2034,6 +2034,58 @@ a.continue-reading {
 	margin-bottom: 0;
 }
 
+.service-title{
+	font-size: 2rem;
+	color:#0693e3;
+}
+.service-column {
+	margin-bottom: 70px;
+	margin-top: 50px;
+}
+.service-column > *:first-child {
+	margin-top: 0;
+}
+.service-column > *:last-child {
+	margin-bottom: 0;
+}
+
+.service-column {
+    flex: 1;
+    flex-basis: 100%;
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word
+}
+
+@media (min-width:600px) {
+    .service-column {
+        flex-basis: 50%;
+        flex-grow: 0;
+    }
+}
+
+@media (min-width:600px) {
+    .service-column {
+        margin-right: 32px;
+		margin-left: 32px;
+    }
+}
+@media screen and (min-width: 781px) {
+	.wp-block-columns:nth-child(2n) .service-column:first-child{
+        order:2;		
+    }
+}
+
+@media screen and (max-width: 781px) {
+	.service-column {
+		flex-basis: 100% !important;
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+		margin-bottom: 2.7em;
+		margin-top: 0.9em;
+	}
+}
+
 /* Latest Posts */
 .wp-block-latest-posts {
 	border-top: solid 1px #eee;
@@ -2605,13 +2657,6 @@ a.comment-edit-link:hover {
 }
 
 /* Recent Posts */
-.widget_businesspress_recent_posts li {
-	margin-bottom: 1.5em;
-}
-.widget_businesspress_recent_posts li a {
-	border-bottom: none;
-	display: flex;
-}
 .recent-posts-thumbnail {
 	flex-shrink: 0;
 	margin-bottom: 4px;
@@ -2672,13 +2717,6 @@ a.featured-widget-entry:hover .featured-title {
 	color: #fff;
 }
 @media screen and (min-width: 601px) and (max-width: 979px) {
-	.widget_businesspress_featured_posts {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.widget_businesspress_featured_posts .widget-title {
-		width: 100%;
-	}
 	.featured-widget-entry {
 		margin-bottom: 4%;
 		margin-right: 4%;
