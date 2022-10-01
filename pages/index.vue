@@ -112,9 +112,9 @@
 								<h2 style="text-align:center">最新のお知らせ</h2>
 								<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
 								<ul class="wp-block-latest-posts has-dates">
-									<li v-for="n in response2.list" :key="n.topics_id">
+									<li class="news_item" v-for="n in response2.list" :key="n.topics_id">
 										<div class="news_item_info">
-									    <time class="wp-block-latest-posts__post-date">{{ n.ymd }}</time>
+									    <time>{{ n.ymd }}</time>
 										<span :style="`background-color: ${n.contents_type_ext_col_01}`">{{ n.contents_type_nm }}</span>
 										</div>
 										<nuxt-link :to="`/news/detail/${n.topics_id}`">{{ n.subject }}</nuxt-link>

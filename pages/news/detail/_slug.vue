@@ -20,7 +20,7 @@
 
 								<h2>{{response.details.subject}}</h2>
 								<div class="news_item_info">
-									<time class="wp-block-latest-posts__post-date">{{ response.details.ymd }}</time>
+									<time>{{ response.details.ymd }}</time>
 									<span :style="`background-color: ${response.details.contents_type_ext_col_01}`">{{response.details.contents_type_nm }}</span>
 								</div>
 								<div v-html="response.details.ext_1"></div>
