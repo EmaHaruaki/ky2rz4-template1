@@ -84,10 +84,6 @@
 											:class="{'current-menu-item current_page_item':$route.path === path_contact}">
 											<nuxt-link to="/contact">お問い合わせ</nuxt-link>
 										</li>
-										<li class="menu-item"
-											:class="{'current-menu-item current_page_item':$route.path === path_blog}">
-											<nuxt-link to="/blog">ブログ</nuxt-link>
-										</li>
 									</ul>
 								</div>
 							</nav><!-- .main-navigation -->
@@ -161,11 +157,6 @@
 												class="menu-item"
 												:class="{'current-menu-item current_page_item':$route.path === path_contact}">
 												<nuxt-link to="/contact">お問い合わせ</nuxt-link>
-											</li>
-											<li @click="closemenu"
-												class="menu-item"
-												:class="{'current-menu-item current_page_item':$route.path === path_blog}">
-												<nuxt-link to="/blog">ブログ</nuxt-link>
 											</li>
 										</ul>
 									</div>
