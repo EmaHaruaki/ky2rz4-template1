@@ -77,6 +77,10 @@
 											<nuxt-link to="/news">お知らせ</nuxt-link>
 										</li>
 										<li class="menu-item"
+											:class="{'current-menu-item current_page_item':$route.path === path_careers}">
+											<nuxt-link to="/careers">採用情報</nuxt-link>
+										</li>
+										<li class="menu-item"
 											:class="{'current-menu-item current_page_item':$route.path === path_contact}">
 											<nuxt-link to="/contact">お問い合わせ</nuxt-link>
 										</li>
@@ -150,6 +154,11 @@
 											</li>
 											<li @click="closemenu"
 												class="menu-item"
+												:class="{'current-menu-item current_page_item':$route.path === path_careers}">
+												<nuxt-link to="/careers">採用情報</nuxt-link>
+											</li>
+											<li @click="closemenu"
+												class="menu-item"
 												:class="{'current-menu-item current_page_item':$route.path === path_contact}">
 												<nuxt-link to="/contact">お問い合わせ</nuxt-link>
 											</li>
@@ -218,6 +227,10 @@
 											<nuxt-link to="/news">お知らせ</nuxt-link>
 										</li>
 										<li class="menu-item"
+											:class="{'current-menu-item current_page_item':$route.path === path_careers}">
+											<nuxt-link to="/careers">採用情報</nuxt-link>
+										</li>
+										<li class="menu-item"
 											:class="{'current-menu-item current_page_item':$route.path === path_contact}">
 											<nuxt-link to="/contact">お問い合わせ</nuxt-link>
 										</li>
@@ -269,7 +282,8 @@
 										:class="{'current-menu-item current_page_item':$route.path === path_news}">
 										<nuxt-link to="/news">お知らせ</nuxt-link>
 									</li>
-									<li class="menu-item">
+									<li class="menu-item"
+										:class="{'current-menu-item current_page_item':$route.path === path_careers}">
 										<nuxt-link to="/careers">採用情報</nuxt-link>
 									</li>
 									<li class="menu-item"
@@ -328,6 +342,7 @@ export default {
 			path_service: "/service",
 			path_aboutus: "/about_us",
 			path_news: "/news",
+			path_careers: "/careers",
 			response_homeheader: null
 		}
 	},
