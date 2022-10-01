@@ -3257,6 +3257,10 @@ a.home-header-button:last-child {
 	align-items: center;
 }
 
+.news_item a{
+	color: #777;
+}
+
 @media screen and (max-width: 782px){
 	.news_item {
     	align-items: flex-start;
