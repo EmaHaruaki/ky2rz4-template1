@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'ky2rz4',
+    title: 'ky2rz4-template1',
     htmlAttrs: {
       lang: 'ja'
     },
@@ -15,8 +15,19 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: '本サイトはJamStack構成で作成したシンプルな企業向けサイトです。サービス情報、企業情報、お問い合わせフォームといった基本機能に加えて、ブログの利用も可能です。' },
+      { name: 'format-detection', content: 'telephone=no' },
+
+      { hid: 'og:site_name', property: 'og:site_name', content: 'GLOBALLY CONNECTED' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://ky2rz4-template1.g.kuroco-front.app/' },
+      { hid: 'og:title', property: 'og:title', content: 'GLOBALLY CONNECTED' },
+      { hid: 'og:description', property: 'og:description', content: '本サイトはJamStack構成で作成したシンプルな企業向けサイトです。サービス情報、企業情報、お問い合わせフォームといった基本機能に加えて、ブログの利用も可能です。' },
+      { hid: 'og:image', property: 'og:image', content: 'サイトURL' },
+
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'GLOBALLY CONNECTED' },
+      { hid: 'twitter:description', name: 'twitter:description', content: '本サイトはJamStack構成で作成したシンプルな企業向けサイトです。サービス情報、企業情報、お問い合わせフォームといった基本機能に加えて、ブログの利用も可能です。' }
     ],
     script:[
       //{ src: 'js/jquery.js', defer: true },
